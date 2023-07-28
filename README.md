@@ -1,7 +1,8 @@
 Dark Calculator
+
 Repositorio del proyecto de la app Dark Calculator.
 
-<img src="https://github.com/DuskStarGITHUB/Dark-Calculator/assets/134586747/bf126cd9-cfae-42d5-97c0-97aad9b18f21" alt="Default generates an image of a desktop calculator in black color" width="200">
+<img src="https://github.com/DuskStarGITHUB/Dark-Calculator/assets/134586747/bf126cd9-cfae-42d5-97c0-97aad9b18f21" alt="Default generates an image of a desktop calculator in black color" width="150">
 
 
 💡 La Dark Calculator es una calculadora open source con una amplia gama de configuraciones que te permiten personalizarla a tu gusto. Puedes descargarla en dispositivos móviles android o en tu equipo de computo windows.
