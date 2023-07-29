@@ -1,0 +1,3 @@
+cambiar el color de algunos textos a amarillo
+reemplazar "PAGINA WEB/assets/image/duskstar_1aumento.png" por el logo de la calculadora "PAGINA WEB/assets/image/dark-calculator.png"
+mejorar ""PAGINA WEB/assets/image/dark-calculator.png" para que no se vea tan rara
