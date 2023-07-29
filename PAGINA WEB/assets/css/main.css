@@ -1950,7 +1950,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1f23;
+  color: #f0e900;
 }
 
 blockquote {
@@ -3258,7 +3258,7 @@ body:after {
 }
 
 .wrapper.style2 header p {
-  color: rgba(255, 255, 255, 0.25);
+  color: #f0e900;
 }
 
 @media screen and (max-width: 1280px) {
