@@ -1,0 +1,2 @@
+1- Añadir mas contenido a la pagina web.
+2- Provar de manera entera el resposive.

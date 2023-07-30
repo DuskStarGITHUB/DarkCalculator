@@ -273,6 +273,7 @@ body {
   overflow-y: hidden;
 }
 
+/* LINKS */
 a,
 a:hover,
 a:focus {
@@ -284,6 +285,7 @@ a:focus {
   color: initial;
 }
 
+/* BOTONES */
 .btn,
 .btn:focus {
   outline: none !important;
@@ -295,6 +297,7 @@ a:focus {
   width: 105px;
 }
 
+/* BARRA DE NAVEGACION */
 .navbar-brand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,7 +323,6 @@ a:focus {
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
   background-size: 55px;
 }
 
@@ -330,38 +332,7 @@ a:focus {
   display: flex;
 }
 
-.user_option {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: 45px;
-}
-
-.user_option a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: 35px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.user_option a img {
-  width: 20px;
-  margin-right: 10px;
-}
-
-.user_option a span {
-  color: #ffffff;
-}
-
-/*end header section*/
+/* SECCION INICIAL */
 .slider_section {
   padding-top: 45px;
 }
@@ -419,14 +390,7 @@ a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#000000),
-    color-stop(transparent),
-    to(transparent)
-  );
+  background: (linear, left top, left bottom);
   background: linear-gradient(to bottom, #000000, transparent, transparent);
   z-index: 1;
   display: none;
@@ -653,7 +617,7 @@ a:focus {
   -webkit-animation: hueAnimate 0.7s infinite;
   animation: hueAnimate 0.7s infinite;
 }
-.about-img{
+.about-img {
   border-radius: 1000px;
   border: 2px solid #fad932;
 }
@@ -931,16 +895,6 @@ a:focus {
   background-color: #fad932;
 }
 
-.client_section .carousel-control-prev {
-  background-image: url(../images/prev-arrow.png);
-  left: -65px;
-}
-
-.client_section .carousel-control-next {
-  background-image: url(../images/next-arrow.png);
-  right: -65px;
-}
-
 .client_section .camera_img-box {
   margin-top: 115%;
 }
@@ -1060,8 +1014,7 @@ a:focus {
   margin-bottom: 0;
 }
 
-/* end info section */
-/* footer section*/
+/* FOOTER CSS */
 .footer_section {
   color: #ffffff;
 }
@@ -1101,11 +1054,11 @@ a:focus {
   border: 2px solid #fad932;
 }
 
-.coloryed{
+.coloryed {
   color: white !important;
 }
 
-.github-t{
+.github-t {
   background: none !important;
   color: rgb(0, 170, 255) !important;
   border: none !important;
