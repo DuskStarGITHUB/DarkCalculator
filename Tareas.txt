@@ -1,3 +1,6 @@
 cambiar el color de algunos textos a amarillo
 reemplazar "PAGINA WEB/assets/image/duskstar_1aumento.png" por el logo de la calculadora "PAGINA WEB/assets/image/dark-calculator.png"
 mejorar ""PAGINA WEB/assets/image/dark-calculator.png" para que no se vea tan rara
+
+
+en la pagina nueva en acerca d enosotros en el slider en html hay que vincular otra pagina de nuestro equipo o algo asi.
