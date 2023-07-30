@@ -1063,3 +1063,8 @@ a:focus {
   color: rgb(0, 170, 255) !important;
   border: none !important;
 }
+
+.justificado{
+  text-align: justify;
+  letter-spacing: -1.5px;
+}
