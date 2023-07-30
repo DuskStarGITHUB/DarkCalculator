@@ -5,3 +5,4 @@
 5- Hacer la planificacion de las caracteristica de dark calculator.
 6- Hacer la planificacion de las herramientas y tecnologias a usar.
 7- Realizar ajustes al ReadMe mas explicito y explicadodar dark claculator.
+8- En la pagina añadir animaciones o efectos.

@@ -1049,11 +1049,6 @@ a:focus {
   opacity: 1;
 }
 
-.bgn-1 {
-  border-radius: 500px;
-  border: 2px solid #fad932;
-}
-
 .coloryed {
   color: white !important;
 }
@@ -1064,7 +1059,18 @@ a:focus {
   border: none !important;
 }
 
-.justificado{
+.justificado {
   text-align: justify;
   letter-spacing: -1.5px;
+}
+
+.background-image {
+  background-image: url(https://cdn.leonardo.ai/users/710eb58e-99d6-457f-87f8-0cc2641ce5b9/generations/376bc6a7-2eb6-41f2-97aa-70772e632c1e/variations/Default_forest_dark_without_light_0_376bc6a7-2eb6-41f2-97aa-70772e632c1e_1.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
