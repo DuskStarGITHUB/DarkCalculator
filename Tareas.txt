@@ -1,8 +1,1 @@
-1- Añadir mas contenido a la pagina web mucho mas contenido.
-2- Provar de manera entera el resposive.
-3- Hacer un video para el proyecto y colocarlo en la ruta en index d ela pagina web.
-4- Cambiar por una imagen hd la imagen de youtube temporal de index.
-5- Hacer la planificacion de las caracteristica de dark calculator.
-6- Hacer la planificacion de las herramientas y tecnologias a usar.
-7- Realizar ajustes al ReadMe mas explicito y explicadodar dark claculator.
-8- En la pagina añadir animaciones o efectos.
+1- Realizar Pagina WEB

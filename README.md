@@ -8,7 +8,7 @@ Dark Calculator
 
 Instalación
 
-📥 La instalación de Dark Calculator es sencilla y rápida. Dirígete al repositorio oficial del proyecto en GitHub para acceder al instalador correspondiente a tu sistema operativo. Además, en las tiendas de aplicaciones para dispositivos móviles Android encontrarás nuestra app disponible para descargar en la playstore.
+📥 La instalación de Dark Calculator es sencilla y rápida. Dirígete al repositorio oficial del proyecto en GitHub para acceder al instalador correspondiente a tu sistema operativo o al apk para moviles android. Además, en las tiendas de aplicaciones para dispositivos móviles Android encontrarás nuestra app disponible para descargar en la playstore, Por igual tenemos pagina web.
 
 Características
 

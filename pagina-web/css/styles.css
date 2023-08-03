@@ -1,0 +1,62 @@
+/* Resetear estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  z-index: 1;
+}
+/* Estilos para el body */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Estilos para la navbar */
+.navbar {
+  background-color: #000000;
+  padding: 10px;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  z-index: 5;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #1a1a1a;
+}
+
+/* TAMAÑO DE SECCIONES */
+#home{
+    width: 100%;
+    height:100vh;
+}
+
+#about{
+    width: 100%;
+    height: 100vh;
+}

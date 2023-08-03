@@ -1,0 +1,13 @@
+/* CSS DE LA SECCION INICIO */
+/* FUENTES IMPORTADAS */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Cherokee:wght@600&display=swap");
+
+/* ELEMENTOS */
+.title-home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Noto Sans Cherokee", sans-serif;
+  font-size: 60px;
+}
