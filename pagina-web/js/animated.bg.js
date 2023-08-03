@@ -1,51 +1,45 @@
-/*
- *Animates connected nodes about a grid
- *-------------------------------------
- *@date:      19th April, 2020
- *@email:     redutron@protonmail.com
- */
-//set up the gridworm
+// EL PROGRAMA JS QUE GENERA MOVIMIENTO, ANALISIS DE PANTALLA, COLORES PARA UN FONDO ANIMADO.
+// 03/08/2023
+
 class GridWorm {
   constructor(point, interval, pointsList, screenWidth, screenHeight) {
     this.radius = 2;
     this.xCoord = point.x;
     this.yCoord = point.y;
     this.interval = interval;
-    this.color = this.getColor(1, true); //get random color object
-    this.mainColor = this.color.color; //color of the head and body of the girdworm
+    this.color = this.getColor(1, true);
+    this.mainColor = this.color.color;
     this.mainColorIndex = this.color.index;
-    this.nColor = this.getColor(1, true); //get another random color object
-    this.arrowHeadColor = this.nColor.color; //color of the arrrow points at the head of the gridworm
+    this.nColor = this.getColor(1, true);
+    this.arrowHeadColor = this.nColor.color;
     this.arrowHeadColorIndex = this.nColor.index;
     this.pointsList = pointsList;
     this.screenWidth = screenWidth;
     this.screenHeight = screenHeight;
-    this.speed = 5; //the magnitude of the velocity
+    this.speed = 5;
     this.velocity = this.getVelocity();
-    this.junctionMemory = [{ point: point, velocity: this.velocity }]; //memory of each junction visited(helps to construct the worm)
-    //the maximum number of junctions a gridworm can keep in memory(this determines how long the gridworm will be)
+    this.junctionMemory = [{ point: point, velocity: this.velocity }];
     this.junctionMemoryLength = 6;
   }
   getColor(opacity, isRandom = true, index = 0) {
     if (opacity < 0 || opacity > 1 || opacity === null || isNaN(opacity)) {
-      //if opacity is incorrect
       opacity = 1;
     }
     var colors = [
       `rgba(0,0,0,${opacity})`,
-      `rgba(192,192,192,${opacity})` /*silver*/,
-      `rgba(128,128,128,${opacity})` /*gray*/,
-      `rgba(128,0,0,${opacity})` /*maroon*/,
-      `rgba(255,0,0,${opacity})` /*red*/,
-      `rgba(0,255,0,${opacity})` /*lime*/,
-      `rgba(0,0,255,${opacity})` /*blue*/,
-      `rgba(255,0,255,${opacity})` /*fuchsia*/,
-      `rgba(128,128,0,${opacity})` /*olive*/,
-      `rgba(0,128,0,${opacity})` /*green*/,
-      `rgba(128,0,128,${opacity})` /*purple*/,
-      `rgba(0,128,128,${opacity})` /*teal*/,
-      `rgba(0,0,128,${opacity})` /*navy*/,
-      `rgba(138,57,0,${opacity})` /*brown*/,
+      `rgba(192,192,192,${opacity})`,
+      `rgba(128,128,128,${opacity})`,
+      `rgba(128,0,0,${opacity})`,
+      `rgba(255,0,0,${opacity})`,
+      `rgba(0,255,0,${opacity})`,
+      `rgba(0,0,255,${opacity})`,
+      `rgba(255,0,255,${opacity})`,
+      `rgba(128,128,0,${opacity})`,
+      `rgba(0,128,0,${opacity})`,
+      `rgba(128,0,128,${opacity})`,
+      `rgba(0,128,128,${opacity})`,
+      `rgba(0,0,128,${opacity})`,
+      `rgba(138,57,0,${opacity})`,
       `rgba(205,133,63,${opacity})`,
       `rgba(244,164,96,${opacity})`,
       `rgba(139,105,30,${opacity})`,
@@ -82,8 +76,7 @@ class GridWorm {
       let index = Math.floor(this.getRandomNumber(0, colors.length - 1));
       let color = colors[index];
       return { color: color, index: index };
-    } //if specific
-    else {
+    } else {
       if (index >= 0 && index < colors.length) {
         return colors[index];
       }
@@ -92,24 +85,17 @@ class GridWorm {
   }
   getVelocity() {
     let x, y;
-    //flip a coin to decide if gridworm moves vertically or horizontally
+
     if (Math.random() > 0.5) {
-      //if gridworm moves vertically
-      x = 0; //no horizontal movement
-      y = Math.random() > 0.5 ? -this.speed : this.speed; //flip a coin to decide if gridworm moves upwards or downwards
-    } //if gridworm moves horizontally
-    else {
-      x = Math.random() > 0.5 ? -this.speed : this.speed; //flip a coin to decide if gridworm moves left or right
-      y = 0; //no vertical movement
+      x = 0;
+      y = Math.random() > 0.5 ? -this.speed : this.speed;
+    } else {
+      x = Math.random() > 0.5 ? -this.speed : this.speed;
+      y = 0;
     }
     return { x: x, y: y };
   }
-  /**
-   * Returns a random number between min (inclusive) and max (exclusive)
-   * @param  {number} min The lesser of the two numbers.
-   * @param  {number} max The greater of the two numbers.
-   * @return {number} A random number between min (inclusive) and max (exclusive)
-   */
+
   getRandomNumber(min, max) {
     return Math.random() * (max - min) + min;
   }
@@ -117,23 +103,20 @@ class GridWorm {
     for (let i = 0; i < 3; i++) {
       let color = "";
       let radius = 0;
-      switch (
-        i //create three circles with same center
-      ) {
+      switch (i) {
         case 0:
-          radius = circleradius; //smallest circle
+          radius = circleradius;
           color = this.getColor(1, false, colorIndex);
           break;
         case 1:
-          radius = circleradius * 2; //bigger circle
+          radius = circleradius * 2;
           color = this.getColor(0.5, false, colorIndex);
           break;
         case 2:
-          radius = circleradius * 6; //biggest circle
+          radius = circleradius * 6;
           color = this.getColor(0.2, false, colorIndex);
           break;
       }
-      //draw the node
       ctx.beginPath();
       ctx.arc(x, y, radius, 0, 2 * Math.PI);
       ctx.fillStyle = color;
@@ -145,49 +128,41 @@ class GridWorm {
   drawArrowHead(x, y, circleradius, ctx, colorIndex) {
     let points = [];
     if (this.velocity.x === 0) {
-      //if gridworm is moving vertically
       if (this.velocity.y > 0) {
-        //if gridworm is moving down
-        points.push({ x: x + this.interval / 3, y: y }); //point to the right
-        points.push({ x: x - this.interval / 3, y: y }); //point to the left
-        points.push({ x: x, y: y + this.interval / 3 }); //point below
-      } //if gridworm is moving up
-      else {
-        points.push({ x: x + this.interval / 3, y: y }); //point to the right
-        points.push({ x: x - this.interval / 3, y: y }); //point to the left
-        points.push({ x: x, y: y - this.interval / 3 }); //point above
+        points.push({ x: x + this.interval / 3, y: y });
+        points.push({ x: x - this.interval / 3, y: y });
+        points.push({ x: x, y: y + this.interval / 3 });
+      } else {
+        points.push({ x: x + this.interval / 3, y: y });
+        points.push({ x: x - this.interval / 3, y: y });
+        points.push({ x: x, y: y - this.interval / 3 });
       }
-    } //if gridworm is moving horizontally
-    else {
+    } else {
       if (this.velocity.x > 0) {
-        //if gridworm is moving right
-        points.push({ x: x + this.interval / 3, y: y }); //point to the right
-        points.push({ x: x, y: y - this.interval / 3 }); //point above
-        points.push({ x: x, y: y + this.interval / 3 }); //point below
-      } //if gridworm is moving left
-      else {
-        points.push({ x: x - this.interval / 3, y: y }); //point to the left
-        points.push({ x: x, y: y - this.interval / 3 }); //point above
-        points.push({ x: x, y: y + this.interval / 3 }); //point below
+        points.push({ x: x + this.interval / 3, y: y });
+        points.push({ x: x, y: y - this.interval / 3 });
+        points.push({ x: x, y: y + this.interval / 3 });
+      } else {
+        points.push({ x: x - this.interval / 3, y: y });
+        points.push({ x: x, y: y - this.interval / 3 });
+        points.push({ x: x, y: y + this.interval / 3 });
       }
     }
-    //draw a circle about the points that make the arrow head
     for (let i = 0; i < points.length; i++) {
       let point = points[i];
       this.drawCircle(point.x, point.y, circleradius / 2, ctx, colorIndex);
     }
-    this.drawTriangle(points[0], points[1], points[2], ctx); //draw the arrow head
+    this.drawTriangle(points[0], points[1], points[2], ctx);
   }
   drawTriangle(point1, point2, point3, ctx) {
     ctx.beginPath();
     ctx.moveTo(point1.x, point1.y);
     ctx.lineTo(point2.x, point2.y);
     ctx.lineTo(point3.x, point3.y);
-    ctx.fillStyle = "rgba(0,0,0,0.1)"; //transparent black
+    ctx.fillStyle = "rgba(0,0,0,0.1)";
     ctx.fill();
   }
   draw(ctx) {
-    //draw the head of the gridworm
     this.drawCircle(
       this.xCoord,
       this.yCoord,
@@ -202,10 +177,9 @@ class GridWorm {
       ctx,
       this.arrowHeadColorIndex
     );
-    //draw circles and squares at every visited junctions in the gridworm's memory(not RAM)
+
     for (let i = 0; i < this.junctionMemory.length; i++) {
       let junction = this.junctionMemory[this.junctionMemory.length - (i + 1)];
-      //draw a circle at each junction point
       this.drawCircle(
         junction.point.x,
         junction.point.y,
@@ -213,7 +187,6 @@ class GridWorm {
         ctx,
         this.mainColorIndex
       );
-      //draw painted squares at every junction point
       ctx.fillStyle = this.getColor(0.1, false, this.mainColorIndex);
       ctx.fillRect(
         junction.point.x,
@@ -222,14 +195,11 @@ class GridWorm {
         this.interval
       );
     }
-    //draw the line connecting head to body
     ctx.strokeStyle = "black";
     ctx.lineWidth = this.radius;
     ctx.beginPath();
     ctx.moveTo(this.xCoord, this.yCoord);
-    //draw a line to link all the visited junctions in the gridworm's memory(not RAM)
     for (let i = 0; i < this.junctionMemory.length; i++) {
-      //starting from the most recent to the least recent(LIFO)[NB: more like a stack data structure]
       let junction = this.junctionMemory[this.junctionMemory.length - (i + 1)];
       ctx.lineTo(junction.point.x, junction.point.y);
     }
@@ -239,89 +209,75 @@ class GridWorm {
   update(deltaTime) {
     this.junctionMemoryLength =
       this.junctionMemoryLength < 1 ? 1 : this.junctionMemoryLength;
-    //keep the gridworm moving in its current direction
-    this.xCoord += this.velocity.x; //if gridworm is going left or right, keep it going
-    this.yCoord += this.velocity.y; //if gridworm is going up or down, keep it going
+
+    this.xCoord += this.velocity.x;
+    this.yCoord += this.velocity.y;
     if (this.xCoord <= this.interval) {
-      //if gridworm reaches the leftmost point
       this.xCoord = this.interval;
-      this.velocity.x = -this.velocity.x; //move right
-      this.xCoord += this.velocity.x * 3; //nudge it a bit away from the edge
+      this.velocity.x = -this.velocity.x;
+      this.xCoord += this.velocity.x * 3;
     }
     if (this.xCoord >= this.screenWidth - this.interval) {
-      //if gridworm reaches the rightmost point
       this.xCoord = this.junctionMemory[this.junctionMemory.length - 1].point.x;
-      this.velocity.x = -this.velocity.x; //move left
-      this.xCoord += this.velocity.x * 3; //nudge it a bit away from the edge
+      this.velocity.x = -this.velocity.x;
+      this.xCoord += this.velocity.x * 3;
     }
     if (this.yCoord <= this.interval) {
-      //if gridworm reaches the topmost most point
       this.yCoord = this.interval;
-      this.velocity.y = -this.velocity.y; //move down
-      this.yCoord += this.velocity.y * 3; //nudge it a bit away from the edge
+      this.velocity.y = -this.velocity.y;
+      this.yCoord += this.velocity.y * 3;
     }
     if (this.yCoord >= this.screenHeight - this.interval) {
-      //if gridworm reaches the lowest point)
       this.yCoord = this.junctionMemory[this.junctionMemory.length - 1].point.y;
-      this.velocity.y = -this.velocity.y; //move up
-      this.yCoord += this.velocity.y * 4; //nudge it a bit away from the edge
+      this.velocity.y = -this.velocity.y;
+      this.yCoord += this.velocity.y * 4;
     }
     let currentCoord = { x: this.xCoord, y: this.yCoord };
     let latestJunction = this.getJunctionReached(currentCoord);
     if (latestJunction !== currentCoord) {
       let originalVelocity = this.velocity;
-      let newVelocity = this.getVelocity(); //flip a coin to decide to move up and down or right and left
+      let newVelocity = this.getVelocity();
       if (originalVelocity.y === 0) {
-        //if gridworm is moving horizontally
         this.velocity = newVelocity;
         if (newVelocity.y === 0 && newVelocity.x === -originalVelocity.x) {
-          //if it continues the horizontal movement in the opposite direction
-          //don't add the new junction to the memory queue
         } else {
           let memory = { point: latestJunction, velocity: this.velocity };
           if (!this.isInMemory(memory)) {
-            this.junctionMemory.push(memory); //add new memory to the queue
+            this.junctionMemory.push(memory);
           }
-          //this.junctionMemory.push({point:latestJunction,velocity:this.velocity});//add new memory to the queue
         }
-        //nudge it a bit away from the junction
-        this.xCoord += this.velocity.x * 3; //not complete yet. Don't make it too much or too little.
-      } //if gridworm is moving vertically
-      else {
+
+        this.xCoord += this.velocity.x * 3;
+      } else {
         this.velocity = newVelocity;
         if (newVelocity.x === 0 && newVelocity.y === -originalVelocity.y) {
-          //if it continues the verticalal movement in the opposite direction
-          //don't add the new junction to the memory queue
         } else {
           let memory = { point: latestJunction, velocity: this.velocity };
           if (!this.isInMemory(memory)) {
-            this.junctionMemory.push(memory); //add new memory to the queue
+            this.junctionMemory.push(memory);
           }
         }
-        //nudge it a bit away from the junction
-        this.yCoord += this.velocity.y * 3; //not complete yet. Don't make it too much or too little.
+
+        this.yCoord += this.velocity.y * 3;
       }
     }
     if (this.junctionMemory.length > this.junctionMemoryLength) {
-      //if memory is too long
-      this.junctionMemory.shift(); //remove the first memory
+      this.junctionMemory.shift();
     }
   }
-  isInMemory(
-    memory //check if a junction is in memory
-  ) {
+  isInMemory(memory) {
     this.junctionMemory.some(function (mem) {
       if (mem.point === memory.point) {
-        return true; //junction is in memory
+        return true;
       }
       return mem.point === memory.point;
     });
-    return false; //junction is NOT in memory
+    return false;
   }
   getJunctionReached(currentCoord) {
     for (let i = 0; i < this.pointsList.length; i++) {
       let point = this.pointsList[i];
-      //if point(junction) is too far away, ignore it
+
       if (
         Math.abs(currentCoord.x - point.x) > 2 * this.interval ||
         Math.abs(currentCoord.y - point.y) > 2 * this.interval
@@ -330,51 +286,35 @@ class GridWorm {
       }
       let distance = this.getDistance(currentCoord, point);
       if (distance <= this.radius) {
-        //if gridworm head is close enough to a junction
         return point;
       }
     }
     return currentCoord;
   }
-  getDistance(
-    p1,
-    p2 //the distance between two points, p1 and p2
-  ) {
+  getDistance(p1, p2) {
     let dx = p1.x - p2.x;
     let dy = p1.y - p2.y;
     let distance = Math.sqrt(dx * dx + dy * dy);
     return distance;
   }
 
-  /**
-   * Let node correspond to window resizing.
-   * @param  {number} screenHeight The height of the screen.
-   * @param  {number} screenWidth  The width of the screen.
-   * @param  {number} dy           The percentage change in browser window height
-   * @param  {number} dx           The percentage change in browser window width  .
-   */
   refreshScreenSize(screenHeight, screenWidth, dx, dy, points) {}
 }
 
-//sets up and controls all points and gridworms on the canvas
 class Painter {
   constructor(screenWidth, screenHeight) {
     this.screenWidth = screenWidth;
     this.screenHeight = screenHeight;
-    this.interval = 40; //interval from one point to the next
-    this.points = this.createPoints(); //coordinates of the vertices of all squares when the canvas is partitioned
+    this.interval = 40;
+    this.points = this.createPoints();
     this.gridWorms = this.createGridWorms();
     this.color = this.getRandomColor(0.1);
-    document.addEventListener(
-      "click",
-      (
-        event //when user clicks on the canvas
-      ) => {
-        this.points = this.createPoints();
-        this.gridWorms = this.createGridWorms(); //spawn new gridworms
-        this.color = this.getRandomColor(0.1);
-      }
-    );
+    document.addEventListener("click", (event) => {
+      this.points = this.createPoints();
+      this.gridWorms = this.createGridWorms();
+
+      this.color = this.getRandomColor(0.1);
+    });
   }
   createGridWorms() {
     let gridworms = [],
@@ -383,7 +323,7 @@ class Painter {
       let point =
         this.points[
           Math.floor(this.getRandomNumber(0, this.points.length - 1))
-        ]; //randomly select a point
+        ];
       gridworms.push(
         new GridWorm(
           point,
@@ -396,26 +336,16 @@ class Painter {
     }
     return gridworms;
   }
-  createPoints() { //divide the canvas into squares
+  createPoints() {
     let points = [],
-      interval = this.interval; //interval from one point to the next
-    for (
-      var y = interval;
-      y < this.screenHeight;
-      y += interval //get all points in the grid, starting from the top to the bottom
-    ) {
+      interval = this.interval;
+    for (var y = interval; y < this.screenHeight; y += interval) {
       if (y + interval > this.screenHeight) {
-        //if the next point is beyond the right edge of the canvas
-        continue; //skip
+        continue;
       }
-      for (
-        var x = interval;
-        x < this.screenWidth;
-        x += interval //all the while, getting all the horizontal points at each level
-      ) {
+      for (var x = interval; x < this.screenWidth; x += interval) {
         if (x + interval > this.screenWidth) {
-          //if the next point is beyond the bottom edge of the canvas
-          continue; //skip
+          continue;
         }
         points.push({ x: x, y: y });
       }
@@ -424,50 +354,40 @@ class Painter {
   }
   getRandomColor(opacity) {
     var colors = [
-      `rgba(255,0,0,      ${opacity})`, //red
-      `rgba(255, 242,0,   ${opacity})`, //yellow,
-      `rgba(0,0,255,      ${opacity})`, //blue
-      `rgba(255,255,0,    ${opacity})`, //yellow
-      `rgba(0,255,255,    ${opacity})`, //cyan
-      `rgba(255,0,255,    ${opacity})`, //magenta/fuchsia
-      `rgba(192,192,192,  ${opacity})`, //silver
-      `rgba(128,128,128,  ${opacity})`, //gray
-      `rgba(128,0,0,      ${opacity})`, //maroon
-      `rgba(128,128,0,    ${opacity})`, //olive
-      `rgba(0,128,0,      ${opacity})`, //green
-      `rgba(128,0,128,    ${opacity})`, //purple
-      `rgba(0,128,128,    ${opacity})`, //teal
-      `rgba(0,0,128,      ${opacity})`, //navy
-      `rgba(0, 255, 0,    ${opacity})`, //green
-      `rgba(77, 0, 255,   ${opacity})`, //blue
-      `rgba(255, 0, 140,  ${opacity})`, //purple
-      `rgba(0,255,0,      ${opacity})`, //lime
+      `rgba(255,0,0,      ${opacity})`,
+      `rgba(255, 242,0,   ${opacity})`,
+      `rgba(0,0,255,      ${opacity})`,
+      `rgba(255,255,0,    ${opacity})`,
+      `rgba(0,255,255,    ${opacity})`,
+      `rgba(255,0,255,    ${opacity})`,
+      `rgba(192,192,192,  ${opacity})`,
+      `rgba(128,128,128,  ${opacity})`,
+      `rgba(128,0,0,      ${opacity})`,
+      `rgba(128,128,0,    ${opacity})`,
+      `rgba(0,128,0,      ${opacity})`,
+      `rgba(128,0,128,    ${opacity})`,
+      `rgba(0,128,128,    ${opacity})`,
+      `rgba(0,0,128,      ${opacity})`,
+      `rgba(0, 255, 0,    ${opacity})`,
+      `rgba(77, 0, 255,   ${opacity})`,
+      `rgba(255, 0, 140,  ${opacity})`,
+      `rgba(0,255,0,      ${opacity})`,
     ];
     return colors[parseInt(this.getRandomNumber(0, colors.length))];
   }
-  /**
-   * Returns a random number between min (inclusive) and max (exclusive)
-   * @param  {number} min The lesser of the two numbers.
-   * @param  {number} max The greater of the two numbers.
-   * @return {number} A random number between min (inclusive) and max (exclusive)
-   */
+
   getRandomNumber(min, max) {
     return Math.random() * (max - min) + min;
   }
-  /**
-   * Let canvas respond to window resizing.
-   * @param  {number} screenHeight The height of the screen.
-   * @param  {number} screenWidth  The width of the screen.
-   */
+
   refreshScreenSize(screenHeight, screenWidth) {
     if (
       this.screenHeight !== screenHeight ||
       this.screenWidth !== screenWidth
     ) {
-      //if the screen size has changed
       this.screenHeight = screenHeight;
       this.screenWidth = screenWidth;
-      this.points = this.createPoints(); //coordinates of the vertices of all squares when the canvas is partitioned
+      this.points = this.createPoints();
       this.gridWorms = this.createGridWorms();
     }
   }
@@ -477,25 +397,16 @@ class Painter {
     });
   }
   draw(ctx) {
-    /*
-        for(var i = 0; i < this.points.length; i++)
-        {
-            let point = this.points[i];
-            ctx.fillStyle   = Math.random() > 0.5? this.color:'white';//creates a disco effect 
-            ctx.fillRect(point.x,point.y,this.interval,this.interval);
-        }
-        */
     this.gridWorms.forEach(function (gridworm) {
       gridworm.draw(ctx);
     });
   }
 }
 
-//set everything up
 function getBrowserWindowSize() {
   let win = window,
     doc = document,
-    offset = 20, //
+    offset = 20,
     docElem = doc.documentElement,
     body = doc.getElementsByTagName("body")[0],
     browserWindowWidth =
@@ -507,7 +418,7 @@ function getBrowserWindowSize() {
 let browserWindowSize = getBrowserWindowSize(),
   c = document.getElementById("gridwormCanvas"),
   ctx = c.getContext("2d");
-//set size of canvas
+
 c.width = browserWindowSize.x;
 c.height = browserWindowSize.y;
 let SCREEN_WIDTH = browserWindowSize.x,
@@ -516,7 +427,6 @@ let SCREEN_WIDTH = browserWindowSize.x,
   lastTime = 100,
   windowSize;
 function onWindowResize() {
-  //called every time the window gets resized.
   windowSize = getBrowserWindowSize();
   c.width = windowSize.x;
   c.height = windowSize.y;
@@ -531,7 +441,7 @@ function updateCanvas() {
 }
 function doAnimationLoop(timestamp) {
   updateCanvas();
-  painter.refreshScreenSize(SCREEN_HEIGHT, SCREEN_WIDTH); //let canvas respond to window resizing
+  painter.refreshScreenSize(SCREEN_HEIGHT, SCREEN_WIDTH);
   let deltaTime = timestamp - lastTime;
   lastTime = timestamp;
   painter.update(deltaTime);
