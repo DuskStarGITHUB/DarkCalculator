@@ -5,6 +5,7 @@
   box-sizing: border-box;
   color: white;
   z-index: 1;
+  overflow-x: hidden;
 }
 /* Estilos para el body */
 body {
@@ -31,6 +32,7 @@ body {
 }
 
 .navbar li {
+  overflow-y: hidden;
   margin-right: 20px;
 }
 
@@ -51,12 +53,29 @@ body {
 }
 
 /* TAMAÑO DE SECCIONES */
-#home{
-    width: 100%;
-    height:100vh;
+#home {
+  width: 100%;
+  height: 100vh;
 }
 
-#about{
-    width: 100%;
-    height: 100vh;
+#about {
+  width: 100%;
+  height: 100vh;
+}
+.stats {
+  width: 100%;
+  height: 10vh;
+  background-color: #fff;
+}
+#info {
+  width: 100%;
+  height: 100vh;
+}
+#news {
+  width: 100%;
+  height: 100vh;
+}
+#download {
+  width: 100%;
+  height: 100vh;
 }
