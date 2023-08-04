@@ -21,3 +21,9 @@
   background-repeat: no-repeat;
   opacity: 0.5;
 }
+
+.title-news{
+  font-size: 40px;
+  top: 0;
+  left: 0;
+}

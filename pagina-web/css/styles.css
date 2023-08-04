@@ -84,28 +84,29 @@ section{
 #info {
   width: 100%;
   height: 100vh;
-  z-index: 3;
+  z-index: 6;
   background-color: #000;
 }
 #news {
   width: 100%;
   height: 100vh;
-  z-index: 4;
+  z-index: 5;
   background-color: #000;
 }
 #download {
   width: 100%;
   height: 100vh;
-  z-index: 5;
+  z-index: 4;
   background-color: #000;
 }
 
 /* FOOTER */
 footer {
   background-color: #121212;
-  padding: 17px 0;
+  padding: 15px 0;
   text-align: center;
   z-index: 8;
+  border: 2px solid white;
 }
 
 .footer-content {
@@ -137,5 +138,5 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(0vw,101vh);
+  transform: translate(0vw,100vh);
 }
