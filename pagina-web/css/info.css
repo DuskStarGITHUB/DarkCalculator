@@ -1,0 +1,15 @@
+/* CSS DE LA SECCION CARACTERISTICAS */
+/* IMPRTACION DE FUENTES */
+
+
+/* ELEMENTOS */
+.bg-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
