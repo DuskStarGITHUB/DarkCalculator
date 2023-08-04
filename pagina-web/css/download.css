@@ -4,9 +4,8 @@
 /* ELEMENTOS */
 
 .bg-dw {
-  width: 120%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   z-index: -1;
-  opacity: 1;
-  transform: translate(-15vw,-25vh);
-  z-index: 4;
 }
