@@ -1,0 +1,19 @@
+/* IMPORTACION DE FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+
+/* ELEMENTOS */
+.stat-1 {
+  position: relative;
+  transform: translate(5vw, 2.5vh);
+}
+.stat-svg {
+  width: auto;
+  height: 100px;
+}
+
+.info-stat-1{
+    position: absolute;
+    transform: translate(8vw,-15vh);
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+}
