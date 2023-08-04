@@ -1,0 +1,23 @@
+#news {
+  position: relative;
+}
+
+.container-relases {
+  background-color: #00000052;
+  height: 80vh;
+  width: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-news {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
