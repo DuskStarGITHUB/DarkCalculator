@@ -1,9 +1,11 @@
 /* IMPORTACION DE FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap");
 
 /* ELEMENTOS */
+
+/* LINEA DE CODIGO */
 .stat-1 {
-  position: relative;
+  position: absolute;
   transform: translate(5vw, 2.5vh);
 }
 .stat-svg {
@@ -11,9 +13,65 @@
   height: 100px;
 }
 
-.info-stat-1{
-    position: absolute;
-    transform: translate(8vw,-15vh);
-    text-align: center;
-    font-family: 'Chakra Petch', sans-serif;
+.info-stat-1 {
+  position: absolute;
+  width: 150px;
+  transform: translate(8vw, -14vh);
+  text-align: center;
+  font-family: "Chakra Petch", sans-serif;
+  opacity: 0.7;
+}
+/* UPDATES */
+.stat-2 {
+  position: absolute;
+  transform: translate(30vw, 2.5vh);
+}
+.stat-svg-2 {
+  width: auto;
+  height: 100px;
+}
+
+.info-stat-2 {
+  position: absolute;
+  transform: translate(8vw, -14vh);
+  text-align: center;
+  font-family: "Chakra Petch", sans-serif;
+  opacity: 0.7;
+}
+/* ACTUALIZACIONES */
+
+.stat-3 {
+  position: absolute;
+  transform: translate(51.5vw, 2.5vh);
+}
+.stat-svg-3 {
+  width: auto;
+  height: 100px;
+}
+
+.info-stat-3 {
+  position: absolute;
+  transform: translate(8vw, -14vh);
+  text-align: center;
+  font-family: "Chakra Petch", sans-serif;
+  opacity: 0.7;
+}
+
+/* CONTRIBUIDORES */
+
+.stat-4 {
+  position: absolute;
+  transform: translate(75vw, 2.5vh);
+}
+.stat-svg-4 {
+  width: auto;
+  height: 100px;
+}
+
+.info-stat-4 {
+  position: absolute;
+  transform: translate(8vw, -14vh);
+  text-align: center;
+  font-family: "Chakra Petch", sans-serif;
+  opacity: 0.7;
 }
