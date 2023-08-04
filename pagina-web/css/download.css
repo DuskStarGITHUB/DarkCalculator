@@ -1,0 +1,12 @@
+/* CSS DE SECCION DE DESCARGA */
+/* IMPORTACION DE FUENTES */
+
+/* ELEMENTOS */
+
+.bg-dw {
+  width: 120%;
+  z-index: -1;
+  opacity: 1;
+  transform: translate(-15vw,-25vh);
+  z-index: 4;
+}
