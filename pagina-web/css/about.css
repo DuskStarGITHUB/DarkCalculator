@@ -1,5 +1,8 @@
 /* CSS DE A SECCION ACERCA DE */
+/*IMPORTACION DE FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
+/* ELEMENTOS */
 .about-1 {
   position: relative;
   top: 50%;
@@ -14,7 +17,7 @@
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-40vw, -55%);
+  transform: translate(-40vw, -20%);
   height: auto;
   width: 60vh;
   z-index: -2;
@@ -25,7 +28,7 @@
   z-index: -3;
   height: 30vh;
   width: auto;
-  transform: translate(-12vw, 5vh);
+  transform: translate(-12vw, 0vh);
 }
 
 .progress-bar {
@@ -35,7 +38,7 @@
   display: inline-block;
   overflow: hidden;
   position: absolute;
-  transform: translate(-13vw, 55vh);
+  transform: translate(-13vw, 50vh);
 }
 
 .progress {
@@ -43,4 +46,12 @@
   height: 100%;
   background-color: #fff;
   width: 50%;
+}
+
+h2{
+  font-size: 40px;
+}
+
+p{
+  font-family: 'Outfit', sans-serif;
 }
