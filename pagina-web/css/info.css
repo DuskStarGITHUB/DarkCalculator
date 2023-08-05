@@ -165,3 +165,8 @@
 .card__content p a {
   text-decoration: none;
 }
+
+.card__content p a:hover{
+  color: #333333;
+  transition: 0.5s;
+}

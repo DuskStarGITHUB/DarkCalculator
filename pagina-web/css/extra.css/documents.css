@@ -12,12 +12,19 @@ body {
   display: flex;
   flex: 1;
 }
-
+.hid{
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+}
 .sidebar {
   width: 200px;
+  height: 100vh;
   background-color: #222;
   padding: 20px;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  overflow-y: scroll;
 }
 
 .sidebar h1 {
