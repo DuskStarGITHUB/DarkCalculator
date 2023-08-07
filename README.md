@@ -3,7 +3,7 @@ Dark Calculator
 
 💡 
 
-<img src="" width="150">
+<img src="GITHUB/logo-darkcalculator.png" width="150">
 
 Instalación
 
