@@ -1,26 +1,25 @@
-
-Dark Calculator
+**Dark Calculator**
 
 <img src="GITHUB/logo-darkcalculator.png" width="150">
 
 💡 
 
 
-Instalación
+**Instalación**
 
 📥 
 
-Características
+**Características**
 
 ✨ 
 
 🎨 
 
-Desarrolladores
+**Desarrolladores**
 
 👤 
 
-Contacto
+**Contacto**
 
 📞 
 
