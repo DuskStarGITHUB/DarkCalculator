@@ -7,7 +7,7 @@
   z-index: 1;
 }
 /* IMPORTACION DE FUNETES */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 
 /* ELEMENTOS */
 /* Estilos para el body */
@@ -21,7 +21,7 @@ body {
   overflow-x: hidden;
 }
 
-section{
+section {
   scroll-behavior: smooth !important;
 }
 
@@ -33,7 +33,7 @@ section{
   width: 100%;
   position: sticky;
   top: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 .navbar ul {
@@ -114,13 +114,13 @@ footer {
   z-index: 8;
 }
 
-.text-b{
+.text-b {
   color: #000;
 }
 
 /* DEGRADADOS */
 
-.decobar-1{
+.decobar-1 {
   background-color: #fff;
   width: 100%;
   height: 2px;
@@ -128,9 +128,9 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(0vw,327vh);
+  transform: translate(0vw, 327vh);
 }
-.decobar-2{
+.decobar-2 {
   background-color: #fff;
   width: 100%;
   height: 2px;
@@ -138,5 +138,5 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(0vw,100vh);
+  transform: translate(0vw, 100vh);
 }

@@ -1,771 +1,1537 @@
 <!DOCTYPE html>
 <!-- IDIOMA DE PAGINA -->
 <html lang="es">
-<!-- METADATOS -->
+  <!-- METADATOS -->
 
-<head>
+  <head>
     <title>|DarkCalculator|</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ARCHIVOS VINCULADOS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/stats.css">
-    <link rel="stylesheet" href="css/info.css">
-    <link rel="stylesheet" href="css/download.css">
-    <link rel="stylesheet" href="css/news.css">
-    <link rel="stylesheet" href="css/responsive/responsive.css">
-</head>
-<!-- CUERPO DE PAGINA -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/stats.css" />
+    <link rel="stylesheet" href="css/info.css" />
+    <link rel="stylesheet" href="css/download.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <link rel="stylesheet" href="css/responsive/responsive.css" />
+  </head>
+  <!-- CUERPO DE PAGINA -->
 
-<body>
+  <body>
     <!-- CONTENIDO -->
     <main>
-        <!-- SECCION INICIO -->
-        <section id="home">
-            <!-- FONDO -->
-            <h1 class="title-home">DARK CALCULATOR</h1>
-            <img src="assets/img/bg-home.jpg" alt="bg-home" class="bg-home">
-            <canvas id='gridwormCanvas' width='1350' height='620' style='background-color: white;'></canvas>
-            <footer class="documents">
-                <p><a href="pages/documents.html" target="_blank">DOCUMENTACION</a></p>
-            </footer>
-        </section>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Acerca De</a></li>
-                <li><a href="#info">Caracteristicas</a></li>
-                <li><a href="#news">Novedades</a></li>
-                <li><a href="#download">Descarga</a></li>
-            </ul>
-        </nav>
-        <!-- SECCION ACERCA DE -->
-        <section id="about">
-            <article class="about-1">
-                <h2>Acerca De DarkCalculator</h2>
-                <br>
-                <p>Bienvenido a Dark Calculator, ¡Ofrecemos una calculadora open source que lleva las matemáticas a un
-                    nuevo nivel de personalización y funcionalidad. ¡Descubre una experiencia única en cálculos
-                    matemáticos en dispositivos móviles Android y computadoras con sistema operativo Windows!,
-                    Desarollado por <a href="#">ShadowTech Solutions</a>, GITHUB Community y Dark Community.</p>
-            </article>
-            <button class="btn-github" id="btn-hub">
-                GITHUB
-            </button>
-            <script>
-                document.getElementById('btn-hub').addEventListener('click', function () {
-                    window.open('https://github.com/DuskStarGITHUB/Dark-Calculator', '_blank');
-                });
-            </script>
-            <div class="deco-1">
-                <img src="assets/img/phone-img.png" alt="phone-img" class="ph-img">
-                <svg class="logo-a" version="1.0" xmlns="http://www.w3.org/2000/svg" width="300.000000pt"
-                    height="300.000000pt" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
-                    <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" fill="#ffffff"
-                        stroke="none">
-                        <path
-                            d="M1340 2950 c-86 -19 -77 -13 -785 -423 -104 -60 -212 -126 -238 -146 -53 -39 -113 -113 -145 -176 -50 -100 -52 -119 -52 -582 l-1 -436 49 -33 49 -32 6 161 c4 89 10 345 13 569 l7 406 169 92 c93 51 174 90 182 87 7 -3 100 -59 207 -124 107 -66 272 -166 368 -224 l173 -104 -6 -350 c-4 -192 -9 -394 -12 -447 l-7 -98 -86 -47 c-47 -25 -97 -53 -110 -62 l-23 -15 6 335 c3 184 9 384 12 445 l6 111 -272 165 -272 165 -53 -29 c-51 -28 -53 -30 -59 -81 -3 -28 -8 -245 -11 -482 -3 -236 -8 -469 -11 -516 l-5 -87 56 -35 56 -35 152 85 c84 47 156 89 162 94 5 5 13 9 17 9 9 0 9 -144 0 -214 l-7 -48 -164 -91 c-159 -87 -165 -90 -190 -75 -14 8 -108 65 -208 126 -101 61 -183 106 -183 100 0 -6 18 -49 40 -95 63 -129 117 -177 355 -314 110 -64 307 -178 439 -254 321 -185 331 -189 481 -189 99 0 130 3 178 21 48 18 758 420 907 514 108 67 184 167 226 295 27 83 27 107 2 87 -24 -19 -571 -333 -580 -333 -5 0 -78 40 -161 88 -84 49 -252 146 -374 217 l-223 128 0 442 0 443 183 105 c100 58 268 155 374 216 106 61 197 111 202 111 9 0 258 -142 495 -282 55 -32 101 -57 103 -54 2 2 -8 36 -23 77 -55 152 -133 237 -314 341 -63 36 -259 149 -435 250 -176 102 -347 195 -380 207 -68 26 -212 36 -285 21z m211 -44 c86 -18 101 -26 564 -293 418 -242 468 -274 513 -331 35 -44 76 -122 68 -129 -6 -6 -53 20 -316 171 -143 83 -191 106 -211 102 -27 -5 -699 -389 -753 -430 l-29 -22 -36 37 c-32 33 -642 411 -735 456 -20 9 -36 19 -36 23 0 12 670 391 716 404 95 28 164 31 255 12z m-1355 -1118 c-8 -414 -16 -578 -28 -578 -15 0 -6 870 10 898 7 12 15 22 19 22 3 0 3 -154 -1 -342z m634 199 l235 -143 0 -432 0 -431 23 -23 23 -23 107 56 c74 38 113 66 127 87 23 35 35 40 35 15 1 -10 9 -28 20 -41 11 -13 167 -109 347 -214 348 -201 414 -238 435 -238 8 0 124 63 258 141 135 78 251 143 258 146 43 17 -30 -119 -103 -192 -51 -51 -125 -97 -500 -312 -242 -139 -460 -260 -485 -269 -70 -27 -258 -25 -328 3 -100 40 -913 516 -968 566 -54 49 -101 113 -91 124 3 3 57 -26 120 -65 156 -96 194 -114 220 -106 45 13 313 166 334 190 21 23 23 35 23 150 0 111 -2 126 -20 144 -19 19 -22 19 -57 5 -20 -8 -89 -44 -154 -80 -65 -36 -125 -65 -133 -65 -29 0 -66 24 -71 44 -3 12 1 257 8 544 l12 524 24 19 c13 10 33 19 45 19 11 0 127 -64 256 -143z" />
-                        <path
-                            d="M663 1878 c-19 -22 -21 -40 -27 -325 l-7 -301 25 -28 24 -28 77 39 c133 67 163 89 174 132 6 21 11 113 11 204 0 153 -2 168 -21 193 -23 29 -196 136 -220 136 -9 0 -25 -10 -36 -22z m131 -72 c50 -31 94 -56 98 -56 5 0 7 -88 6 -196 l-3 -197 -113 -63 -114 -64 6 228 c3 125 5 269 6 321 0 70 3 92 13 88 6 -2 52 -30 101 -61z" />
-                        <path
-                            d="M1870 2037 l-295 -172 0 -350 0 -350 145 -84 c469 -270 454 -263 477 -252 13 6 121 67 240 137 120 69 246 142 281 162 l62 36 0 61 0 60 -72 -2 c-59 -1 -73 -4 -73 -17 0 -13 -223 -150 -415 -254 l-45 -24 -110 64 c-60 36 -163 95 -227 132 l-118 68 0 263 0 263 78 45 c42 25 145 84 227 132 l150 87 45 -24 c189 -101 420 -243 420 -257 0 -13 12 -16 70 -16 l70 0 0 61 0 62 -102 58 c-57 32 -190 109 -297 171 -107 62 -199 113 -205 112 -6 0 -144 -78 -306 -172z m583 -28 c144 -83 268 -158 275 -167 36 -46 -28 -70 -81 -30 -18 13 -75 49 -127 80 -276 162 -312 181 -342 180 -46 -1 -455 -238 -479 -277 -17 -27 -19 -54 -19 -278 0 -198 3 -254 15 -276 10 -21 69 -60 222 -149 259 -149 245 -142 274 -135 28 7 409 225 456 260 42 33 88 29 88 -7 0 -22 -31 -43 -270 -182 -148 -86 -276 -157 -284 -157 -19 -1 -520 288 -548 316 -23 22 -23 24 -23 326 0 276 2 307 18 326 19 24 529 321 550 321 7 0 131 -68 275 -151z" />
-                        <path
-                            d="M2025 1775 l-140 -83 0 -177 0 -176 147 -85 147 -85 150 87 151 86 0 49 0 49 150 0 150 0 0 75 0 75 -150 0 -150 0 0 49 0 49 -150 86 c-82 47 -153 86 -157 85 -5 0 -71 -38 -148 -84z m262 -21 c146 -85 153 -90 153 -128 0 -21 8 -40 23 -54 20 -19 36 -22 147 -24 l125 -3 0 -30 0 -30 -125 -3 c-111 -2 -127 -5 -147 -24 -13 -12 -23 -33 -23 -48 0 -14 -6 -34 -12 -43 -13 -17 -235 -147 -251 -147 -11 0 -216 118 -239 138 -16 13 -18 34 -18 157 0 120 3 145 16 156 28 23 228 139 241 139 6 0 56 -25 110 -56z" />
-                    </g>
-                </svg>
-                <div class="progress-bar">
-                    <span class="progress"></span>
-                </div>
+      <!-- SECCION INICIO -->
+      <section id="home">
+        <!-- FONDO -->
+        <h1 class="title-home">DARK CALCULATOR</h1>
+        <img src="assets/img/bg-home.jpg" alt="bg-home" class="bg-home" />
+        <canvas
+          id="gridwormCanvas"
+          width="1350"
+          height="620"
+          style="background-color: white"
+        ></canvas>
+        <footer class="documents">
+          <p>
+            <a href="pages/documents.html" target="_blank">DOCUMENTACION</a>
+          </p>
+        </footer>
+      </section>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Acerca De</a></li>
+          <li><a href="#info">Caracteristicas</a></li>
+          <li><a href="#news">Novedades</a></li>
+          <li><a href="#download">Descarga</a></li>
+        </ul>
+      </nav>
+      <!-- SECCION ACERCA DE -->
+      <section id="about">
+        <article class="about-1">
+          <h2>Acerca De DarkCalculator</h2>
+          <br />
+          <p>
+            Bienvenido a Dark Calculator, ¡Ofrecemos una calculadora open source
+            que lleva las matemáticas a un nuevo nivel de personalización y
+            funcionalidad. ¡Descubre una experiencia única en cálculos
+            matemáticos en dispositivos móviles Android y computadoras con
+            sistema operativo Windows!, Desarollado por
+            <span>Solutions</span>, GITHUB Community y Dark Community.
+          </p>
+        </article>
+        <button class="btn-github" id="btn-hub">GITHUB</button>
+        <script>
+          document
+            .getElementById("btn-hub")
+            .addEventListener("click", function () {
+              window.open(
+                "https://github.com/DuskStarGITHUB/DarkCalculator",
+                "_blank"
+              );
+            });
+        </script>
+        <div class="deco-1">
+          <img src="assets/img/phone-img.png" alt="phone-img" class="ph-img" />
+          <svg
+            class="logo-a"
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="300.000000pt"
+            height="300.000000pt"
+            viewBox="0 0 300.000000 300.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g
+              transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
+              fill="#ffffff"
+              stroke="none"
+            >
+              <path
+                d="M1340 2950 c-86 -19 -77 -13 -785 -423 -104 -60 -212 -126 -238 -146 -53 -39 -113 -113 -145 -176 -50 -100 -52 -119 -52 -582 l-1 -436 49 -33 49 -32 6 161 c4 89 10 345 13 569 l7 406 169 92 c93 51 174 90 182 87 7 -3 100 -59 207 -124 107 -66 272 -166 368 -224 l173 -104 -6 -350 c-4 -192 -9 -394 -12 -447 l-7 -98 -86 -47 c-47 -25 -97 -53 -110 -62 l-23 -15 6 335 c3 184 9 384 12 445 l6 111 -272 165 -272 165 -53 -29 c-51 -28 -53 -30 -59 -81 -3 -28 -8 -245 -11 -482 -3 -236 -8 -469 -11 -516 l-5 -87 56 -35 56 -35 152 85 c84 47 156 89 162 94 5 5 13 9 17 9 9 0 9 -144 0 -214 l-7 -48 -164 -91 c-159 -87 -165 -90 -190 -75 -14 8 -108 65 -208 126 -101 61 -183 106 -183 100 0 -6 18 -49 40 -95 63 -129 117 -177 355 -314 110 -64 307 -178 439 -254 321 -185 331 -189 481 -189 99 0 130 3 178 21 48 18 758 420 907 514 108 67 184 167 226 295 27 83 27 107 2 87 -24 -19 -571 -333 -580 -333 -5 0 -78 40 -161 88 -84 49 -252 146 -374 217 l-223 128 0 442 0 443 183 105 c100 58 268 155 374 216 106 61 197 111 202 111 9 0 258 -142 495 -282 55 -32 101 -57 103 -54 2 2 -8 36 -23 77 -55 152 -133 237 -314 341 -63 36 -259 149 -435 250 -176 102 -347 195 -380 207 -68 26 -212 36 -285 21z m211 -44 c86 -18 101 -26 564 -293 418 -242 468 -274 513 -331 35 -44 76 -122 68 -129 -6 -6 -53 20 -316 171 -143 83 -191 106 -211 102 -27 -5 -699 -389 -753 -430 l-29 -22 -36 37 c-32 33 -642 411 -735 456 -20 9 -36 19 -36 23 0 12 670 391 716 404 95 28 164 31 255 12z m-1355 -1118 c-8 -414 -16 -578 -28 -578 -15 0 -6 870 10 898 7 12 15 22 19 22 3 0 3 -154 -1 -342z m634 199 l235 -143 0 -432 0 -431 23 -23 23 -23 107 56 c74 38 113 66 127 87 23 35 35 40 35 15 1 -10 9 -28 20 -41 11 -13 167 -109 347 -214 348 -201 414 -238 435 -238 8 0 124 63 258 141 135 78 251 143 258 146 43 17 -30 -119 -103 -192 -51 -51 -125 -97 -500 -312 -242 -139 -460 -260 -485 -269 -70 -27 -258 -25 -328 3 -100 40 -913 516 -968 566 -54 49 -101 113 -91 124 3 3 57 -26 120 -65 156 -96 194 -114 220 -106 45 13 313 166 334 190 21 23 23 35 23 150 0 111 -2 126 -20 144 -19 19 -22 19 -57 5 -20 -8 -89 -44 -154 -80 -65 -36 -125 -65 -133 -65 -29 0 -66 24 -71 44 -3 12 1 257 8 544 l12 524 24 19 c13 10 33 19 45 19 11 0 127 -64 256 -143z"
+              />
+              <path
+                d="M663 1878 c-19 -22 -21 -40 -27 -325 l-7 -301 25 -28 24 -28 77 39 c133 67 163 89 174 132 6 21 11 113 11 204 0 153 -2 168 -21 193 -23 29 -196 136 -220 136 -9 0 -25 -10 -36 -22z m131 -72 c50 -31 94 -56 98 -56 5 0 7 -88 6 -196 l-3 -197 -113 -63 -114 -64 6 228 c3 125 5 269 6 321 0 70 3 92 13 88 6 -2 52 -30 101 -61z"
+              />
+              <path
+                d="M1870 2037 l-295 -172 0 -350 0 -350 145 -84 c469 -270 454 -263 477 -252 13 6 121 67 240 137 120 69 246 142 281 162 l62 36 0 61 0 60 -72 -2 c-59 -1 -73 -4 -73 -17 0 -13 -223 -150 -415 -254 l-45 -24 -110 64 c-60 36 -163 95 -227 132 l-118 68 0 263 0 263 78 45 c42 25 145 84 227 132 l150 87 45 -24 c189 -101 420 -243 420 -257 0 -13 12 -16 70 -16 l70 0 0 61 0 62 -102 58 c-57 32 -190 109 -297 171 -107 62 -199 113 -205 112 -6 0 -144 -78 -306 -172z m583 -28 c144 -83 268 -158 275 -167 36 -46 -28 -70 -81 -30 -18 13 -75 49 -127 80 -276 162 -312 181 -342 180 -46 -1 -455 -238 -479 -277 -17 -27 -19 -54 -19 -278 0 -198 3 -254 15 -276 10 -21 69 -60 222 -149 259 -149 245 -142 274 -135 28 7 409 225 456 260 42 33 88 29 88 -7 0 -22 -31 -43 -270 -182 -148 -86 -276 -157 -284 -157 -19 -1 -520 288 -548 316 -23 22 -23 24 -23 326 0 276 2 307 18 326 19 24 529 321 550 321 7 0 131 -68 275 -151z"
+              />
+              <path
+                d="M2025 1775 l-140 -83 0 -177 0 -176 147 -85 147 -85 150 87 151 86 0 49 0 49 150 0 150 0 0 75 0 75 -150 0 -150 0 0 49 0 49 -150 86 c-82 47 -153 86 -157 85 -5 0 -71 -38 -148 -84z m262 -21 c146 -85 153 -90 153 -128 0 -21 8 -40 23 -54 20 -19 36 -22 147 -24 l125 -3 0 -30 0 -30 -125 -3 c-111 -2 -127 -5 -147 -24 -13 -12 -23 -33 -23 -48 0 -14 -6 -34 -12 -43 -13 -17 -235 -147 -251 -147 -11 0 -216 118 -239 138 -16 13 -18 34 -18 157 0 120 3 145 16 156 28 23 228 139 241 139 6 0 56 -25 110 -56z"
+              />
+            </g>
+          </svg>
+          <div class="progress-bar">
+            <span class="progress"></span>
+          </div>
+        </div>
+      </section>
+      <!-- SECCION DE ESTADISTICAS -->
+      <section class="stats">
+        <div class="stat-1">
+          <svg
+            class="stat-svg"
+            viewBox="0 0 64 64"
+            id="svg5"
+            version="1.1"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            fill="#000000"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <defs id="defs2"></defs>
+              <g id="layer1" transform="translate(-192,-672)">
+                <path
+                  d="m 201.99999,681 h 49 v 6 h -49 z"
+                  id="path61204"
+                  style="
+                    fill: #3e4f59;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 201.99999,687 h 49 v 40 h -49 z"
+                  id="path61206"
+                  style="
+                    fill: #acbec2;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-width: 2.00001;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 201.99999,687 v 40 h 29.76953 a 28.484051,41.392605 35.599482 0 0 18.625,-40 z"
+                  id="path61208"
+                  style="
+                    fill: #e8edee;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke: none;
+                    stroke-width: 2.00002;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 203.99999,680 c -1.64501,0 -3,1.355 -3,3 v 40 c 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 v -40 c 0,-0.56413 0.43587,-1 1,-1 h 45 c 0.56413,0 1,0.43587 1,1 v 3 h -42 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 h 42 v 37 c 0,0.56413 -0.43587,1 -1,1 h -49 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 h 49 c 1.64501,0 3,-1.35499 3,-3 0,-14 0,-28 0,-42 0,-1.645 -1.35499,-3 -3,-3 z"
+                  id="path61210"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 246.99999,683 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
+                  id="path61212"
+                  style="
+                    color: #000000;
+                    fill: #ed7161;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 242.99999,683 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
+                  id="path61214"
+                  style="
+                    color: #000000;
+                    fill: #ecba16;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 238.99999,683 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
+                  id="path61216"
+                  style="
+                    color: #000000;
+                    fill: #42b05c;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 196.99999,726 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                  id="path61218"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 204.99999,686 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
+                  id="path61220"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 212,694 a 1,1 0 0 0 -0.70703,0.29297 l -3,3 a 1.0001,1.0001 0 0 0 0,1.41406 l 3,3 a 1,1 0 0 0 1.41406,0 1,1 0 0 0 0,-1.41406 L 210.41406,698 l 2.29297,-2.29297 a 1,1 0 0 0 0,-1.41406 A 1,1 0 0 0 212,694 Z"
+                  id="path18303"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 220.04297,694.22852 a 1,1 0 0 0 -0.70899,0.29296 1,1 0 0 0 0,1.41407 l 2.29297,2.29297 -2.29297,2.29296 a 1,1 0 0 0 0,1.41407 1,1 0 0 0 1.41602,0 l 3,-3 a 1.0001,1.0001 0 0 0 0,-1.41407 l -3,-3 a 1,1 0 0 0 -0.70703,-0.29296 z"
+                  id="path19465"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 217.37891,694.59961 a 1,1 0 0 0 -1.29883,0.55859 l -2,5 a 1,1 0 0 0 0.55664,1.29883 1,1 0 0 0 1.29883,-0.55664 l 2,-5 a 1,1 0 0 0 -0.55664,-1.30078 z"
+                  id="path19467"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <g id="path19469">
+                  <path
+                    d="m 227,697 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 18 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path24534"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <g id="path19471">
+                  <path
+                    d="m 214,705 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 31 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path24540"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <g id="path19473">
+                  <path
+                    d="m 214,709 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 13.10156 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z m 17,0 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 4 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path24546"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <g id="path19475">
+                  <path
+                    d="m 214,713 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 31 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path24552"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <g id="path19477">
+                  <path
+                    d="m 214,717 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 7.93164 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z m 12,0 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 12 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path24558"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <g id="path19479">
+                  <path
+                    d="m 214,721 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 31 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path24564"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <g id="path19481">
+                  <path
+                    d="m 227,701 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 9 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path24570"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <g id="path19483">
+                  <path
+                    d="m 227,693 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 18 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path24576"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <path
+                  d="m 209,705 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
+                  id="path19485"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 209,709 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
+                  id="path20213"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 209,713 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
+                  id="path20215"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 209,717 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
+                  id="path20217"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 209,721 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
+                  id="path20219"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <div class="info-stat-1">
+            <h3 class="text-b">Lineas de codigo</h3>
+            <h4 class="text-b">#</h4>
+          </div>
+        </div>
+        <div class="stat-2">
+          <svg
+            class="stat-svg-2"
+            viewBox="0 0 64 64"
+            id="svg5"
+            version="1.1"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            fill="#000000"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <defs id="defs2"></defs>
+              <g id="layer1" transform="translate(-384,-384)">
+                <path
+                  d="m 393.99999,393 h 49 v 6 h -49 z"
+                  id="path27011"
+                  style="
+                    fill: #3e4f59;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 393.99999,399 h 49 v 40 h -49 z"
+                  id="path27013"
+                  style="
+                    fill: #acbec2;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-width: 2.00001;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 393.99999,399 v 40 h 29.76953 a 28.484051,41.392605 35.599482 0 0 18.625,-40 z"
+                  id="path27015"
+                  style="
+                    fill: #e8edee;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke: none;
+                    stroke-width: 2.00002;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 395.99999,392 c -1.64501,0 -3,1.355 -3,3 v 40 c 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 v -40 c 0,-0.56413 0.43587,-1 1,-1 h 45 c 0.56413,0 1,0.43587 1,1 v 3 h -42 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 h 42 v 37 c 0,0.56413 -0.43587,1 -1,1 h -49 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 h 49 c 1.64501,0 3,-1.35499 3,-3 0,-14 0,-28 0,-42 0,-1.645 -1.35499,-3 -3,-3 z"
+                  id="path27017"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 438.99999,395 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
+                  id="path27019"
+                  style="
+                    color: #000000;
+                    fill: #ed7161;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 434.99999,395 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
+                  id="path27021"
+                  style="
+                    color: #000000;
+                    fill: #ecba16;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 430.99999,395 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
+                  id="path27023"
+                  style="
+                    color: #000000;
+                    fill: #42b05c;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 388.99999,438 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                  id="path27025"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 396.99999,398 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
+                  id="path27027"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <g id="g25645" transform="matrix(1,0,0,-1,25.26562,838)">
+                  <path
+                    d="m 382.73438,407 h 20.99994 v 4 h -20.99994 z"
+                    id="path25627"
+                    style="
+                      fill: #ffa221;
+                      fill-opacity: 1;
+                      fill-rule: evenodd;
+                      stroke: none;
+                      stroke-width: 2;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                  <path
+                    d="m 382.73438,407 v 1.90625 a 1.9763446,1.9763446 0 0 0 0.62695,0.11523 h 17.04688 a 1.9763446,1.9763446 0 0 0 1.97656,-1.97656 V 407 Z"
+                    id="path25629"
+                    style="
+                      fill: #ffc343;
+                      fill-opacity: 1;
+                      fill-rule: evenodd;
+                      stroke: none;
+                      stroke-width: 2;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                  <path
+                    d="M 393.18627,414.39896 387.23429,421 h 3.50003 v 10 h 5 v -10 h 3.49997 z"
+                    id="path25631"
+                    style="
+                      fill: #0075d3;
+                      fill-opacity: 1;
+                      fill-rule: evenodd;
+                      stroke: none;
+                      stroke-width: 2;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                  <path
+                    d="M 389.2461,418.76758 387.23438,421 h 3.5 v 10 h 4.35547 a 6.5794034,10.703726 0 0 0 0.0801,-1.58398 6.5794034,10.703726 0 0 0 -5.92383,-10.64844 z"
+                    id="path25633"
+                    style="
+                      fill: #0588e2;
+                      fill-opacity: 1;
+                      fill-rule: evenodd;
+                      stroke: none;
+                      stroke-width: 2;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                  <path
+                    d="m 393.18165,413.39844 c -0.28159,0.001 -0.54964,0.12102 -0.73829,0.33008 l -5.95117,6.60156 c -0.5801,0.64318 -0.12395,1.66951 0.74219,1.66992 h 2.5 c 0,3 0,6 0,9 6e-5,0.55226 0.44774,0.99994 1,1 h 5 c 0.55226,-6e-5 0.99994,-0.44774 1,-1 v -9 h 2.5 c 0.86964,-8.7e-4 1.32387,-1.03463 0.73633,-1.67578 l -2.30469,-2.51758 c -0.37354,-0.40766 -1.00701,-0.4348 -1.41406,-0.0606 -0.40637,0.37335 -0.43349,1.00532 -0.0606,1.41211 L 396.9629,420 h -1.22852 c -0.55226,6e-5 -0.99994,0.44774 -1,1 v 9 h -3 c 0,-3 0,-6 0,-9 -6e-5,-0.55226 -0.44774,-0.99994 -1,-1 h -1.25195 l 3.71093,-4.11328 0.80469,0.8789 c 0.37338,0.40634 1.00534,0.43342 1.41211,0.0605 0.40693,-0.37281 0.4349,-1.0048 0.0625,-1.41211 l -1.54883,-1.6914 c -0.19061,-0.20789 -0.46014,-0.32564 -0.74218,-0.32422 z"
+                    id="path25635"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                  <path
+                    d="m 382.73438,406 a 1.0001,1.0001 0 0 0 -1,1 v 4 a 1.0001,1.0001 0 0 0 1,1 h 14.97461 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 h -13.97461 v -2 h 0.9668 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z m 6,0 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 14 v 2 h -1.02344 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 2.02344 a 1.0001,1.0001 0 0 0 1,-1 v -4 a 1.0001,1.0001 0 0 0 -1,-1 z"
+                    id="path25637"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <div class="info-stat-2">
+            <h3 class="text-b">Descargas</h3>
+            <h4 class="text-b">#</h4>
+          </div>
+        </div>
+        <div class="stat-3">
+          <svg
+            class="stat-svg-3"
+            viewBox="0 0 64.000015 64.000015"
+            id="svg5"
+            version="1.1"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            fill="#000000"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <defs id="defs2"></defs>
+              <g id="layer1" transform="translate(-96)">
+                <path
+                  d="m 106.00001,9 h 49 v 6 h -49 z"
+                  id="path6142"
+                  style="
+                    fill: #3e4f59;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 106.00001,15 h 49 v 40 h -49 z"
+                  id="path6144"
+                  style="
+                    fill: #acbec2;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-width: 2.00001;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 106.00001,15 v 40 h 29.76953 a 28.484051,41.392605 35.599482 0 0 18.625,-40 z"
+                  id="path6146"
+                  style="
+                    fill: #e8edee;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke: none;
+                    stroke-width: 2.00002;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 144.00001,34.82472 c 0,7.179705 -5.8203,13.000005 -13,13.000005 -7.17971,0 -13.00001,-5.8203 -13.00001,-13.000005 0,-7.179705 5.8203,-13.000005 13.00001,-13.000005 7.1797,0 13,5.8203 13,13.000005 z"
+                  id="path31153"
+                  style="
+                    fill: #ffa221;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke: none;
+                    stroke-width: 1.99999;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 108.00001,8 c -1.64501,0 -3,1.3549933 -3,3 v 40 c 0,0.552285 0.44772,1 1,1 0.55228,0 1,-0.447715 1,-1 V 11 c 0,-0.564128 0.43587,-1 1,-1 h 45 c 0.56413,0 1,0.435872 1,1 v 3 h -42 c -0.55228,0 -1,0.447715 -1,1 0,0.552285 0.44772,1 1,1 h 42 v 37 c 0,0.564127 -0.43587,1 -1,1 h -49 c -0.55228,0 -1,0.447715 -1,1 0,0.552285 0.44772,1 1,1 h 49 c 1.64501,0 3,-1.354994 3,-3 0,-14 0,-28 0,-42 0,-1.6450067 -1.35499,-3 -3,-3 z"
+                  id="path6148"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 151.00001,11 c -0.55228,0 -1,0.447715 -1,1 0,0.552285 0.44772,1 1,1 0.55228,0 1,-0.447715 1,-1 0,-0.552285 -0.44772,-1 -1,-1 z"
+                  id="path6150"
+                  style="
+                    color: #000000;
+                    fill: #ed7161;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 147.00001,11 c -0.55228,0 -1,0.447715 -1,1 0,0.552285 0.44772,1 1,1 0.55228,0 1,-0.447715 1,-1 0,-0.552285 -0.44772,-1 -1,-1 z"
+                  id="path6152"
+                  style="
+                    color: #000000;
+                    fill: #ecba16;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 143.00001,11 c -0.55228,0 -1,0.447715 -1,1 0,0.552285 0.44772,1 1,1 0.55228,0 1,-0.447715 1,-1 0,-0.552285 -0.44772,-1 -1,-1 z"
+                  id="path6154"
+                  style="
+                    color: #000000;
+                    fill: #42b05c;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 101.00001,54 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                  id="path6156"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 109.00001,14 c -0.55228,0 -1,0.447715 -1,1 0,0.552285 0.44772,1 1,1 0.55228,0 1,-0.447715 1,-1 0,-0.552285 -0.44772,-1 -1,-1 z"
+                  id="path6158"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 131,21.824219 c -7.1797,0 -13,5.820302 -13,13 0,6.336409 4.53488,11.611332 10.53516,12.763672 6.57904,-2.346499 11.28906,-8.628733 11.28906,-16.013672 0,-2.781095 -0.67145,-5.403178 -1.85547,-7.720703 C 135.95404,22.570963 133.56526,21.824219 131,21.824219 Z"
+                  id="path6388"
+                  style="
+                    fill: #ffc343;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke: none;
+                    stroke-width: 1.99998;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 133.00002,41.824718 a 2,2 0 0 1 -2,2 2,2 0 0 1 -2,-2 2,2 0 0 1 2,-2 2,2 0 0 1 2,2 z"
+                  id="path2060"
+                  style="
+                    color: #000000;
+                    fill: #fe93d3;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 131,38.824219 c -1.64501,0 -3,1.354992 -3,3 0,1.645008 1.35499,3 3,3 1.64501,0 3,-1.354992 3,-3 0,-1.645008 -1.35499,-3 -3,-3 z m 0,2 c 0.56413,0 1,0.435871 1,1 0,0.564129 -0.43587,1 -1,1 -0.56413,0 -1,-0.435871 -1,-1 0,-0.564129 0.43587,-1 1,-1 z"
+                  id="path2062"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 133.00001,31.57472 a 2,5.25 0 0 1 -2,5.25 2,5.25 0 0 1 -2,-5.25 2,5.25 0 0 1 2,-5.25 2,5.25 0 0 1 2,5.25 z"
+                  id="path31159"
+                  style="
+                    fill: #fe93d3;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke: none;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 131,20.824219 c -7.72014,0 -14,6.279865 -14,14 a 0.99999499,0.99999499 0 0 0 1,1 0.99999499,0.99999499 0 0 0 1,-1 c 0,-6.639261 5.36073,-12 12,-12 3.34545,0 6.35858,1.363847 8.53516,3.566406 a 0.99999499,0.99999499 0 0 0 1.41406,0.0078 0.99999499,0.99999499 0 0 0 0.01,-1.414062 C 138.4221,22.417204 134.89009,20.824219 131,20.824219 Z m 11.10156,7.158203 a 0.99999499,0.99999499 0 0 0 -0.42969,1.347656 C 142.52128,30.9761 143,32.840232 143,34.824219 c 0,6.639261 -5.36074,12 -12,12 -5.24255,0 -9.68619,-3.352102 -11.32617,-8.021485 a 0.99999499,0.99999499 0 0 0 -1.27344,-0.611328 0.99999499,0.99999499 0 0 0 -0.61328,1.273438 c 1.9156,5.454135 7.11685,9.359375 13.21289,9.359375 7.72013,0 14,-6.279866 14,-14 0,-2.306983 -0.55931,-4.490799 -1.55078,-6.41211 a 0.99999499,0.99999499 0 0 0 -1.34766,-0.429687 z"
+                  id="path1926"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 131,25.324219 c -0.63081,0 -1.16097,0.343864 -1.52148,0.74414 -0.36052,0.400277 -0.61705,0.883405 -0.82813,1.4375 C 128.22822,28.61405 128,30.021532 128,31.574219 c 0,1.552687 0.22822,2.960169 0.65039,4.068359 0.21108,0.554095 0.46761,1.039177 0.82813,1.439453 0.36051,0.400277 0.89067,0.742188 1.52148,0.742188 0.63081,0 1.16097,-0.341911 1.52148,-0.742188 0.36052,-0.400276 0.61705,-0.885358 0.82813,-1.439453 C 133.77178,34.534388 134,33.126906 134,31.574219 a 1,1 0 0 0 -1,-1 1,1 0 0 0 -1,1 c 0,1.346805 -0.21784,2.565488 -0.51953,3.357422 -0.15085,0.395967 -0.32728,0.679495 -0.44531,0.810546 -0.11804,0.131052 -0.11368,0.08203 -0.0352,0.08203 0.0785,0 0.0829,0.04902 -0.0352,-0.08203 -0.11803,-0.131051 -0.29446,-0.414579 -0.44531,-0.810546 C 130.21784,34.139707 130,32.921024 130,31.574219 c 0,-1.346805 0.21784,-2.563535 0.51953,-3.355469 0.15085,-0.395967 0.32728,-0.681448 0.44531,-0.8125 0.11804,-0.131052 0.11368,-0.08203 0.0352,-0.08203 -0.0876,0 -0.0689,-0.05135 0.0781,0.132812 0.14705,0.184159 0.34394,0.555839 0.50196,1.050781 a 1,1 0 0 0 1.25781,0.648438 1,1 0 0 0 0.64844,-1.255859 C 133.27748,27.24618 133.01666,26.677468 132.6426,26.208985 132.26851,25.740502 131.70342,25.324219 131,25.324219 Z"
+                  id="path2066"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <div class="info-stat-3">
+            <h3 class="text-b">Actualizaciones</h3>
+            <h4 class="text-b">#</h4>
+          </div>
+        </div>
+        <div class="stat-4">
+          <svg
+            class="stat-svg-4"
+            viewBox="0 0 64 64"
+            id="svg5"
+            version="1.1"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            fill="#000000"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <defs id="defs2"></defs>
+              <g id="layer1" transform="translate(-288,-288)">
+                <path
+                  d="m 298,297 h 49 v 6 h -49 z"
+                  id="path26975"
+                  style="
+                    fill: #3e4f59;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 298,303 h 49 v 40 h -49 z"
+                  id="path26977"
+                  style="
+                    fill: #acbec2;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-width: 2.00001;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 298,303 v 40 h 29.76953 a 28.484051,41.392605 35.599482 0 0 18.625,-40 z"
+                  id="path26979"
+                  style="
+                    fill: #e8edee;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke: none;
+                    stroke-width: 2.00002;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 300,296 c -1.64501,0 -3,1.355 -3,3 v 40 c 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 v -40 c 0,-0.56413 0.43587,-1 1,-1 h 45 c 0.56413,0 1,0.43587 1,1 v 3 h -42 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 h 42 v 37 c 0,0.56413 -0.43587,1 -1,1 h -49 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 h 49 c 1.64501,0 3,-1.35499 3,-3 0,-14 0,-28 0,-42 0,-1.645 -1.35499,-3 -3,-3 z"
+                  id="path26981"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 343,299 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
+                  id="path26983"
+                  style="
+                    color: #000000;
+                    fill: #ed7161;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 339,299 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
+                  id="path26985"
+                  style="
+                    color: #000000;
+                    fill: #ecba16;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 335,299 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
+                  id="path26987"
+                  style="
+                    color: #000000;
+                    fill: #42b05c;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 293,342 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                  id="path26989"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 301,302 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
+                  id="path26991"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <g id="path4370">
+                  <path
+                    d="m 319,307.06836 a 1,1 0 0 0 -1,1 v 28.86328 a 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 v -28.86328 a 1,1 0 0 0 -1,-1 z"
+                    id="path21765"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <g id="path4384">
+                  <path
+                    d="m 310,326 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 5 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path21771"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <g id="path4372">
+                  <path
+                    d="m 303,326 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 3 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path21777"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <g id="path4378">
+                  <path
+                    d="m 303,332 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 12 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path21783"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <g id="path4396">
+                  <path
+                    d="m 332,309 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 9 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path21789"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <path
+                  d="m 324,309 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
+                  id="path6610"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <g id="path6612">
+                  <path
+                    d="m 332,325 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 9 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path21801"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <path
+                  d="m 324,325 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
+                  id="path6614"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <g id="path6616">
+                  <path
+                    d="m 324,317 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 17 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path21795"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <g id="path7344">
+                  <path
+                    d="m 324,334 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 17 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
+                    id="path21807"
+                    style="
+                      color: #000000;
+                      fill: #000000;
+                      fill-rule: evenodd;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 4.1;
+                    "
+                  ></path>
+                </g>
+                <path
+                  d="m 312.00001,312 a 2.99999,2.99999 0 0 1 -2.99999,3 2.99999,2.99999 0 0 1 -2.99999,-3 2.99999,2.99999 0 0 1 2.99999,-2.99998 2.99999,2.99999 0 0 1 2.99999,2.99998 z"
+                  id="path16444"
+                  style="
+                    fill: #ffa221;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke: none;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 304.00002,321 c 0,-3.31371 2.23858,-6 5,-6 2.76142,0 4.99998,2.68629 4.99998,6 z"
+                  id="path16446"
+                  style="
+                    fill: #ffa221;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke: none;
+                    stroke-width: 2.00001;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 307.82621,309.24415 a 2.99999,2.99999 0 0 0 -1.82617,2.75586 2.99999,2.99999 0 0 0 3,3 2.99999,2.99999 0 0 0 0.68555,-0.0801 5.7604036,9.6529589 0 0 0 -1.85938,-5.67578 z"
+                  id="path16448"
+                  style="
+                    fill: #ffc343;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 309.00004,315.00001 c -2.76142,0 -5,2.68629 -5,6 h 5.07227 a 5.7604036,9.6529589 0 0 0 0.6875,-4.54297 5.7604036,9.6529589 0 0 0 -0.0606,-1.39844 C 309.47078,315.0202 309.23732,315 309.00004,315 Z"
+                  id="path16450"
+                  style="
+                    fill: #ffc343;
+                    fill-opacity: 1;
+                    fill-rule: evenodd;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+                <path
+                  d="m 309.00004,308.00001 c -2.19728,0 -3.99999,1.80272 -4,4 0,1.09667 0.44883,2.09529 1.17188,2.82031 -1.91443,1.19449 -3.17188,3.55834 -3.17188,6.17969 a 1.000105,1.000105 0 0 0 1,1 h 4 a 1.000005,1.000005 0 0 0 1,-1 1.000005,1.000005 0 0 0 -1,-1 h -2.83594 c 0.39188,-2.32414 1.98868,-4 3.83594,-4 1.84726,0 3.44406,1.67586 3.83594,4 h -0.83594 a 1.000005,1.000005 0 0 0 -1,1 1.000005,1.000005 0 0 0 1,1 h 2 a 1.000105,1.000105 0 0 0 1,-1 c 0,-2.62135 -1.25745,-4.9852 -3.17188,-6.17969 0.72305,-0.72502 1.17188,-1.72364 1.17188,-2.82031 -1e-5,-2.19728 -1.80272,-4 -4,-4 z m 0,2 c 1.1164,0 2,0.8836 2,2 0,1.11641 -0.88359,2 -2,2 -1.11641,0 -2,-0.88359 -2,-2 0,-1.1164 0.8836,-2 2,-2 z"
+                  id="path16452"
+                  style="
+                    color: #000000;
+                    fill: #000000;
+                    fill-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 4.1;
+                  "
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <div class="info-stat-4">
+            <h3 class="text-b">Contribuidores</h3>
+            <h4 class="text-b">#</h4>
+          </div>
+        </div>
+      </section>
+      <!-- SECCION DE CARACTERISTICAS -->
+      <section id="info">
+        <!-- ELEMENTOS CARD-->
+        <div class="card">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
             </div>
-
-        </section>
-        <!-- SECCION DE ESTADISTICAS -->
-        <section class="stats">
-            <div class="stat-1">
-                <svg class="stat-svg" viewBox="0 0 64 64" id="svg5" version="1.1" xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" fill="#000000">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <defs id="defs2"></defs>
-                        <g id="layer1" transform="translate(-192,-672)">
-                            <path d="m 201.99999,681 h 49 v 6 h -49 z" id="path61204"
-                                style="fill:#3e4f59;fill-opacity:1;fill-rule:evenodd;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path d="m 201.99999,687 h 49 v 40 h -49 z" id="path61206"
-                                style="fill:#acbec2;fill-opacity:1;fill-rule:evenodd;stroke-width:2.00001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path d="m 201.99999,687 v 40 h 29.76953 a 28.484051,41.392605 35.599482 0 0 18.625,-40 z"
-                                id="path61208"
-                                style="fill:#e8edee;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.00002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 203.99999,680 c -1.64501,0 -3,1.355 -3,3 v 40 c 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 v -40 c 0,-0.56413 0.43587,-1 1,-1 h 45 c 0.56413,0 1,0.43587 1,1 v 3 h -42 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 h 42 v 37 c 0,0.56413 -0.43587,1 -1,1 h -49 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 h 49 c 1.64501,0 3,-1.35499 3,-3 0,-14 0,-28 0,-42 0,-1.645 -1.35499,-3 -3,-3 z"
-                                id="path61210"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 246.99999,683 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
-                                id="path61212"
-                                style="color:#000000;fill:#ed7161;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 242.99999,683 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
-                                id="path61214"
-                                style="color:#000000;fill:#ecba16;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 238.99999,683 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
-                                id="path61216"
-                                style="color:#000000;fill:#42b05c;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path d="m 196.99999,726 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                id="path61218"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 204.99999,686 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
-                                id="path61220"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 212,694 a 1,1 0 0 0 -0.70703,0.29297 l -3,3 a 1.0001,1.0001 0 0 0 0,1.41406 l 3,3 a 1,1 0 0 0 1.41406,0 1,1 0 0 0 0,-1.41406 L 210.41406,698 l 2.29297,-2.29297 a 1,1 0 0 0 0,-1.41406 A 1,1 0 0 0 212,694 Z"
-                                id="path18303"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 220.04297,694.22852 a 1,1 0 0 0 -0.70899,0.29296 1,1 0 0 0 0,1.41407 l 2.29297,2.29297 -2.29297,2.29296 a 1,1 0 0 0 0,1.41407 1,1 0 0 0 1.41602,0 l 3,-3 a 1.0001,1.0001 0 0 0 0,-1.41407 l -3,-3 a 1,1 0 0 0 -0.70703,-0.29296 z"
-                                id="path19465"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 217.37891,694.59961 a 1,1 0 0 0 -1.29883,0.55859 l -2,5 a 1,1 0 0 0 0.55664,1.29883 1,1 0 0 0 1.29883,-0.55664 l 2,-5 a 1,1 0 0 0 -0.55664,-1.30078 z"
-                                id="path19467"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <g id="path19469">
-                                <path
-                                    d="m 227,697 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 18 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path24534"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <g id="path19471">
-                                <path
-                                    d="m 214,705 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 31 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path24540"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <g id="path19473">
-                                <path
-                                    d="m 214,709 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 13.10156 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z m 17,0 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 4 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path24546"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <g id="path19475">
-                                <path
-                                    d="m 214,713 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 31 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path24552"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <g id="path19477">
-                                <path
-                                    d="m 214,717 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 7.93164 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z m 12,0 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 12 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path24558"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <g id="path19479">
-                                <path
-                                    d="m 214,721 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 31 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path24564"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <g id="path19481">
-                                <path
-                                    d="m 227,701 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 9 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path24570"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <g id="path19483">
-                                <path
-                                    d="m 227,693 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 18 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path24576"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <path
-                                d="m 209,705 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
-                                id="path19485"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 209,709 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
-                                id="path20213"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 209,713 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
-                                id="path20215"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 209,717 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
-                                id="path20217"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 209,721 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
-                                id="path20219"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                        </g>
-                    </g>
-                </svg>
-                <div class="info-stat-1">
-                    <h3 class="text-b">Lineas de codigo</h3>
-                    <h4 class="text-b">#</h4>
-                </div>
+            <div class="circle">
+              <span class="yellow box"></span>
             </div>
-            <div class="stat-2">
-                <svg class="stat-svg-2" viewBox="0 0 64 64" id="svg5" version="1.1" xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" fill="#000000">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <defs id="defs2"></defs>
-                        <g id="layer1" transform="translate(-384,-384)">
-                            <path d="m 393.99999,393 h 49 v 6 h -49 z" id="path27011"
-                                style="fill:#3e4f59;fill-opacity:1;fill-rule:evenodd;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path d="m 393.99999,399 h 49 v 40 h -49 z" id="path27013"
-                                style="fill:#acbec2;fill-opacity:1;fill-rule:evenodd;stroke-width:2.00001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path d="m 393.99999,399 v 40 h 29.76953 a 28.484051,41.392605 35.599482 0 0 18.625,-40 z"
-                                id="path27015"
-                                style="fill:#e8edee;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.00002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 395.99999,392 c -1.64501,0 -3,1.355 -3,3 v 40 c 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 v -40 c 0,-0.56413 0.43587,-1 1,-1 h 45 c 0.56413,0 1,0.43587 1,1 v 3 h -42 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 h 42 v 37 c 0,0.56413 -0.43587,1 -1,1 h -49 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 h 49 c 1.64501,0 3,-1.35499 3,-3 0,-14 0,-28 0,-42 0,-1.645 -1.35499,-3 -3,-3 z"
-                                id="path27017"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 438.99999,395 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
-                                id="path27019"
-                                style="color:#000000;fill:#ed7161;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 434.99999,395 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
-                                id="path27021"
-                                style="color:#000000;fill:#ecba16;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 430.99999,395 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
-                                id="path27023"
-                                style="color:#000000;fill:#42b05c;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path d="m 388.99999,438 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                id="path27025"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 396.99999,398 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
-                                id="path27027"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <g id="g25645" transform="matrix(1,0,0,-1,25.26562,838)">
-                                <path d="m 382.73438,407 h 20.99994 v 4 h -20.99994 z" id="path25627"
-                                    style="fill:#ffa221;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                                <path
-                                    d="m 382.73438,407 v 1.90625 a 1.9763446,1.9763446 0 0 0 0.62695,0.11523 h 17.04688 a 1.9763446,1.9763446 0 0 0 1.97656,-1.97656 V 407 Z"
-                                    id="path25629"
-                                    style="fill:#ffc343;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                                <path d="M 393.18627,414.39896 387.23429,421 h 3.50003 v 10 h 5 v -10 h 3.49997 z"
-                                    id="path25631"
-                                    style="fill:#0075d3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                                <path
-                                    d="M 389.2461,418.76758 387.23438,421 h 3.5 v 10 h 4.35547 a 6.5794034,10.703726 0 0 0 0.0801,-1.58398 6.5794034,10.703726 0 0 0 -5.92383,-10.64844 z"
-                                    id="path25633"
-                                    style="fill:#0588e2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                                <path
-                                    d="m 393.18165,413.39844 c -0.28159,0.001 -0.54964,0.12102 -0.73829,0.33008 l -5.95117,6.60156 c -0.5801,0.64318 -0.12395,1.66951 0.74219,1.66992 h 2.5 c 0,3 0,6 0,9 6e-5,0.55226 0.44774,0.99994 1,1 h 5 c 0.55226,-6e-5 0.99994,-0.44774 1,-1 v -9 h 2.5 c 0.86964,-8.7e-4 1.32387,-1.03463 0.73633,-1.67578 l -2.30469,-2.51758 c -0.37354,-0.40766 -1.00701,-0.4348 -1.41406,-0.0606 -0.40637,0.37335 -0.43349,1.00532 -0.0606,1.41211 L 396.9629,420 h -1.22852 c -0.55226,6e-5 -0.99994,0.44774 -1,1 v 9 h -3 c 0,-3 0,-6 0,-9 -6e-5,-0.55226 -0.44774,-0.99994 -1,-1 h -1.25195 l 3.71093,-4.11328 0.80469,0.8789 c 0.37338,0.40634 1.00534,0.43342 1.41211,0.0605 0.40693,-0.37281 0.4349,-1.0048 0.0625,-1.41211 l -1.54883,-1.6914 c -0.19061,-0.20789 -0.46014,-0.32564 -0.74218,-0.32422 z"
-                                    id="path25635"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                                </path>
-                                <path
-                                    d="m 382.73438,406 a 1.0001,1.0001 0 0 0 -1,1 v 4 a 1.0001,1.0001 0 0 0 1,1 h 14.97461 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 h -13.97461 v -2 h 0.9668 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z m 6,0 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 14 v 2 h -1.02344 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 2.02344 a 1.0001,1.0001 0 0 0 1,-1 v -4 a 1.0001,1.0001 0 0 0 -1,-1 z"
-                                    id="path25637"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                                </path>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-                <div class="info-stat-2">
-                    <h3 class="text-b">Descargas</h3>
-                    <h4 class="text-b">#</h4>
-                </div>
+            <div class="circle">
+              <span class="green box"></span>
             </div>
-            <div class="stat-3">
-                <svg class="stat-svg-3" viewBox="0 0 64.000015 64.000015" id="svg5" version="1.1" xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" fill="#000000">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <defs id="defs2"></defs>
-                        <g id="layer1" transform="translate(-96)">
-                            <path d="m 106.00001,9 h 49 v 6 h -49 z" id="path6142"
-                                style="fill:#3e4f59;fill-opacity:1;fill-rule:evenodd;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path d="m 106.00001,15 h 49 v 40 h -49 z" id="path6144"
-                                style="fill:#acbec2;fill-opacity:1;fill-rule:evenodd;stroke-width:2.00001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path d="m 106.00001,15 v 40 h 29.76953 a 28.484051,41.392605 35.599482 0 0 18.625,-40 z"
-                                id="path6146"
-                                style="fill:#e8edee;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.00002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 144.00001,34.82472 c 0,7.179705 -5.8203,13.000005 -13,13.000005 -7.17971,0 -13.00001,-5.8203 -13.00001,-13.000005 0,-7.179705 5.8203,-13.000005 13.00001,-13.000005 7.1797,0 13,5.8203 13,13.000005 z"
-                                id="path31153"
-                                style="fill:#ffa221;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.99999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 108.00001,8 c -1.64501,0 -3,1.3549933 -3,3 v 40 c 0,0.552285 0.44772,1 1,1 0.55228,0 1,-0.447715 1,-1 V 11 c 0,-0.564128 0.43587,-1 1,-1 h 45 c 0.56413,0 1,0.435872 1,1 v 3 h -42 c -0.55228,0 -1,0.447715 -1,1 0,0.552285 0.44772,1 1,1 h 42 v 37 c 0,0.564127 -0.43587,1 -1,1 h -49 c -0.55228,0 -1,0.447715 -1,1 0,0.552285 0.44772,1 1,1 h 49 c 1.64501,0 3,-1.354994 3,-3 0,-14 0,-28 0,-42 0,-1.6450067 -1.35499,-3 -3,-3 z"
-                                id="path6148"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 151.00001,11 c -0.55228,0 -1,0.447715 -1,1 0,0.552285 0.44772,1 1,1 0.55228,0 1,-0.447715 1,-1 0,-0.552285 -0.44772,-1 -1,-1 z"
-                                id="path6150"
-                                style="color:#000000;fill:#ed7161;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 147.00001,11 c -0.55228,0 -1,0.447715 -1,1 0,0.552285 0.44772,1 1,1 0.55228,0 1,-0.447715 1,-1 0,-0.552285 -0.44772,-1 -1,-1 z"
-                                id="path6152"
-                                style="color:#000000;fill:#ecba16;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 143.00001,11 c -0.55228,0 -1,0.447715 -1,1 0,0.552285 0.44772,1 1,1 0.55228,0 1,-0.447715 1,-1 0,-0.552285 -0.44772,-1 -1,-1 z"
-                                id="path6154"
-                                style="color:#000000;fill:#42b05c;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path d="m 101.00001,54 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                id="path6156"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 109.00001,14 c -0.55228,0 -1,0.447715 -1,1 0,0.552285 0.44772,1 1,1 0.55228,0 1,-0.447715 1,-1 0,-0.552285 -0.44772,-1 -1,-1 z"
-                                id="path6158"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 131,21.824219 c -7.1797,0 -13,5.820302 -13,13 0,6.336409 4.53488,11.611332 10.53516,12.763672 6.57904,-2.346499 11.28906,-8.628733 11.28906,-16.013672 0,-2.781095 -0.67145,-5.403178 -1.85547,-7.720703 C 135.95404,22.570963 133.56526,21.824219 131,21.824219 Z"
-                                id="path6388"
-                                style="fill:#ffc343;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.99998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 133.00002,41.824718 a 2,2 0 0 1 -2,2 2,2 0 0 1 -2,-2 2,2 0 0 1 2,-2 2,2 0 0 1 2,2 z"
-                                id="path2060"
-                                style="color:#000000;fill:#fe93d3;fill-opacity:1;fill-rule:evenodd;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 131,38.824219 c -1.64501,0 -3,1.354992 -3,3 0,1.645008 1.35499,3 3,3 1.64501,0 3,-1.354992 3,-3 0,-1.645008 -1.35499,-3 -3,-3 z m 0,2 c 0.56413,0 1,0.435871 1,1 0,0.564129 -0.43587,1 -1,1 -0.56413,0 -1,-0.435871 -1,-1 0,-0.564129 0.43587,-1 1,-1 z"
-                                id="path2062"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 133.00001,31.57472 a 2,5.25 0 0 1 -2,5.25 2,5.25 0 0 1 -2,-5.25 2,5.25 0 0 1 2,-5.25 2,5.25 0 0 1 2,5.25 z"
-                                id="path31159"
-                                style="fill:#fe93d3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 131,20.824219 c -7.72014,0 -14,6.279865 -14,14 a 0.99999499,0.99999499 0 0 0 1,1 0.99999499,0.99999499 0 0 0 1,-1 c 0,-6.639261 5.36073,-12 12,-12 3.34545,0 6.35858,1.363847 8.53516,3.566406 a 0.99999499,0.99999499 0 0 0 1.41406,0.0078 0.99999499,0.99999499 0 0 0 0.01,-1.414062 C 138.4221,22.417204 134.89009,20.824219 131,20.824219 Z m 11.10156,7.158203 a 0.99999499,0.99999499 0 0 0 -0.42969,1.347656 C 142.52128,30.9761 143,32.840232 143,34.824219 c 0,6.639261 -5.36074,12 -12,12 -5.24255,0 -9.68619,-3.352102 -11.32617,-8.021485 a 0.99999499,0.99999499 0 0 0 -1.27344,-0.611328 0.99999499,0.99999499 0 0 0 -0.61328,1.273438 c 1.9156,5.454135 7.11685,9.359375 13.21289,9.359375 7.72013,0 14,-6.279866 14,-14 0,-2.306983 -0.55931,-4.490799 -1.55078,-6.41211 a 0.99999499,0.99999499 0 0 0 -1.34766,-0.429687 z"
-                                id="path1926"
-                                style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 131,25.324219 c -0.63081,0 -1.16097,0.343864 -1.52148,0.74414 -0.36052,0.400277 -0.61705,0.883405 -0.82813,1.4375 C 128.22822,28.61405 128,30.021532 128,31.574219 c 0,1.552687 0.22822,2.960169 0.65039,4.068359 0.21108,0.554095 0.46761,1.039177 0.82813,1.439453 0.36051,0.400277 0.89067,0.742188 1.52148,0.742188 0.63081,0 1.16097,-0.341911 1.52148,-0.742188 0.36052,-0.400276 0.61705,-0.885358 0.82813,-1.439453 C 133.77178,34.534388 134,33.126906 134,31.574219 a 1,1 0 0 0 -1,-1 1,1 0 0 0 -1,1 c 0,1.346805 -0.21784,2.565488 -0.51953,3.357422 -0.15085,0.395967 -0.32728,0.679495 -0.44531,0.810546 -0.11804,0.131052 -0.11368,0.08203 -0.0352,0.08203 0.0785,0 0.0829,0.04902 -0.0352,-0.08203 -0.11803,-0.131051 -0.29446,-0.414579 -0.44531,-0.810546 C 130.21784,34.139707 130,32.921024 130,31.574219 c 0,-1.346805 0.21784,-2.563535 0.51953,-3.355469 0.15085,-0.395967 0.32728,-0.681448 0.44531,-0.8125 0.11804,-0.131052 0.11368,-0.08203 0.0352,-0.08203 -0.0876,0 -0.0689,-0.05135 0.0781,0.132812 0.14705,0.184159 0.34394,0.555839 0.50196,1.050781 a 1,1 0 0 0 1.25781,0.648438 1,1 0 0 0 0.64844,-1.255859 C 133.27748,27.24618 133.01666,26.677468 132.6426,26.208985 132.26851,25.740502 131.70342,25.324219 131,25.324219 Z"
-                                id="path2066"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                        </g>
-                    </g>
-                </svg>
-                <div class="info-stat-3">
-                    <h3 class="text-b">Actualizaciones</h3>
-                    <h4 class="text-b">#</h4>
-                </div>
+          </div>
+          <div class="card__content">
+            <br />
+            <p>
+              <a href="pages/documents.html#2.1" target="_blank"
+                >Calculadoras Basicas</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
             </div>
-            <div class="stat-4">
-                <svg class="stat-svg-4" viewBox="0 0 64 64" id="svg5" version="1.1" xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" fill="#000000">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <defs id="defs2"></defs>
-                        <g id="layer1" transform="translate(-288,-288)">
-                            <path d="m 298,297 h 49 v 6 h -49 z" id="path26975"
-                                style="fill:#3e4f59;fill-opacity:1;fill-rule:evenodd;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path d="m 298,303 h 49 v 40 h -49 z" id="path26977"
-                                style="fill:#acbec2;fill-opacity:1;fill-rule:evenodd;stroke-width:2.00001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path d="m 298,303 v 40 h 29.76953 a 28.484051,41.392605 35.599482 0 0 18.625,-40 z"
-                                id="path26979"
-                                style="fill:#e8edee;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.00002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 300,296 c -1.64501,0 -3,1.355 -3,3 v 40 c 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 v -40 c 0,-0.56413 0.43587,-1 1,-1 h 45 c 0.56413,0 1,0.43587 1,1 v 3 h -42 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 h 42 v 37 c 0,0.56413 -0.43587,1 -1,1 h -49 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 h 49 c 1.64501,0 3,-1.35499 3,-3 0,-14 0,-28 0,-42 0,-1.645 -1.35499,-3 -3,-3 z"
-                                id="path26981"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 343,299 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
-                                id="path26983"
-                                style="color:#000000;fill:#ed7161;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 339,299 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
-                                id="path26985"
-                                style="color:#000000;fill:#ecba16;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 335,299 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
-                                id="path26987"
-                                style="color:#000000;fill:#42b05c;fill-opacity:1;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path d="m 293,342 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                id="path26989"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <path
-                                d="m 301,302 c -0.55228,0 -1,0.44772 -1,1 0,0.55229 0.44772,1 1,1 0.55229,0 1,-0.44771 1,-1 0,-0.55228 -0.44771,-1 -1,-1 z"
-                                id="path26991"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <g id="path4370">
-                                <path
-                                    d="m 319,307.06836 a 1,1 0 0 0 -1,1 v 28.86328 a 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 v -28.86328 a 1,1 0 0 0 -1,-1 z"
-                                    id="path21765"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <g id="path4384">
-                                <path
-                                    d="m 310,326 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 5 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path21771"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <g id="path4372">
-                                <path
-                                    d="m 303,326 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 3 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path21777"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <g id="path4378">
-                                <path
-                                    d="m 303,332 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 12 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path21783"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <g id="path4396">
-                                <path
-                                    d="m 332,309 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 9 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path21789"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <path
-                                d="m 324,309 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
-                                id="path6610"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <g id="path6612">
-                                <path
-                                    d="m 332,325 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 9 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path21801"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <path
-                                d="m 324,325 c -0.55228,0 -1,0.44771 -1,1 0,0.55228 0.44772,1 1,1 0.55229,0 1,-0.44772 1,-1 0,-0.55229 -0.44771,-1 -1,-1 z"
-                                id="path6614"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                            </path>
-                            <g id="path6616">
-                                <path
-                                    d="m 324,317 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 17 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path21795"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                                </path>
-                            </g>
-                            <g id="path7344">
-                                <path
-                                    d="m 324,334 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 17 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z"
-                                    id="path21807"
-                                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;">
-                                </path>
-                            </g>
-                            <path
-                                d="m 312.00001,312 a 2.99999,2.99999 0 0 1 -2.99999,3 2.99999,2.99999 0 0 1 -2.99999,-3 2.99999,2.99999 0 0 1 2.99999,-2.99998 2.99999,2.99999 0 0 1 2.99999,2.99998 z"
-                                id="path16444"
-                                style="fill:#ffa221;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path d="m 304.00002,321 c 0,-3.31371 2.23858,-6 5,-6 2.76142,0 4.99998,2.68629 4.99998,6 z"
-                                id="path16446"
-                                style="fill:#ffa221;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.00001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 307.82621,309.24415 a 2.99999,2.99999 0 0 0 -1.82617,2.75586 2.99999,2.99999 0 0 0 3,3 2.99999,2.99999 0 0 0 0.68555,-0.0801 5.7604036,9.6529589 0 0 0 -1.85938,-5.67578 z"
-                                id="path16448"
-                                style="fill:#ffc343;fill-opacity:1;fill-rule:evenodd;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 309.00004,315.00001 c -2.76142,0 -5,2.68629 -5,6 h 5.07227 a 5.7604036,9.6529589 0 0 0 0.6875,-4.54297 5.7604036,9.6529589 0 0 0 -0.0606,-1.39844 C 309.47078,315.0202 309.23732,315 309.00004,315 Z"
-                                id="path16450"
-                                style="fill:#ffc343;fill-opacity:1;fill-rule:evenodd;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                            <path
-                                d="m 309.00004,308.00001 c -2.19728,0 -3.99999,1.80272 -4,4 0,1.09667 0.44883,2.09529 1.17188,2.82031 -1.91443,1.19449 -3.17188,3.55834 -3.17188,6.17969 a 1.000105,1.000105 0 0 0 1,1 h 4 a 1.000005,1.000005 0 0 0 1,-1 1.000005,1.000005 0 0 0 -1,-1 h -2.83594 c 0.39188,-2.32414 1.98868,-4 3.83594,-4 1.84726,0 3.44406,1.67586 3.83594,4 h -0.83594 a 1.000005,1.000005 0 0 0 -1,1 1.000005,1.000005 0 0 0 1,1 h 2 a 1.000105,1.000105 0 0 0 1,-1 c 0,-2.62135 -1.25745,-4.9852 -3.17188,-6.17969 0.72305,-0.72502 1.17188,-1.72364 1.17188,-2.82031 -1e-5,-2.19728 -1.80272,-4 -4,-4 z m 0,2 c 1.1164,0 2,0.8836 2,2 0,1.11641 -0.88359,2 -2,2 -1.11641,0 -2,-0.88359 -2,-2 0,-1.1164 0.8836,-2 2,-2 z"
-                                id="path16452"
-                                style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1">
-                            </path>
-                        </g>
-                    </g>
-                </svg>
-                <div class="info-stat-4">
-                    <h3 class="text-b">Contribuidores</h3>
-                    <h4 class="text-b">#</h4>
-                </div>
+            <div class="circle">
+              <span class="yellow box"></span>
             </div>
-        </section>
-        <!-- SECCION DE CARACTERISTICAS -->
-        <section id="info">
-            <!-- ELEMENTOS CARD-->
-            <div class="card">
-                <div class="tools">
-                    <div class="circle">
-                        <span class="red box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="yellow box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="green box"></span>
-                    </div>
-                </div>
-                <div class="card__content">
-                    <br>
-                    <p><a href="pages/documents.html#2.1" target="_blank">Calculadoras Basicas</a></p>
-                </div>
+            <div class="circle">
+              <span class="green box"></span>
             </div>
-            <div class="card-2">
-                <div class="tools">
-                    <div class="circle">
-                        <span class="red box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="yellow box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="green box"></span>
-                    </div>
-                </div>
-                <div class="card__content">
-                    <br>
-                    <p><a href="pages/documents.html#2.6" target="_blank">I.A Integrada</a></p>
-                </div>
+          </div>
+          <div class="card__content">
+            <br />
+            <p>
+              <a href="pages/documents.html#2.6" target="_blank"
+                >I.A Integrada</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card-3">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
             </div>
-            <div class="card-3">
-                <div class="tools">
-                    <div class="circle">
-                        <span class="red box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="yellow box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="green box"></span>
-                    </div>
-                </div>
-                <div class="card__content">
-                    <br>
-                    <p><a href="pages/documents.html#2.3" target="_blank">Calculadoras Graficas</a></p>
-                </div>
+            <div class="circle">
+              <span class="yellow box"></span>
             </div>
-            <div class="card-4">
-                <div class="tools">
-                    <div class="circle">
-                        <span class="red box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="yellow box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="green box"></span>
-                    </div>
-                </div>
-                <div class="card__content">
-                    <br>
-                    <p><a href="pages/documents.html#2.8" target="_blank">Perzonalizar Interfaz</a></p>
-                </div>
+            <div class="circle">
+              <span class="green box"></span>
             </div>
-            <div class="card-5">
-                <div class="tools">
-                    <div class="circle">
-                        <span class="red box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="yellow box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="green box"></span>
-                    </div>
-                </div>
-                <div class="card__content">
-                    <br>
-                    <p><a href="pages/documents.html#2.5" target="_blank">Calculadoras Novedosas</a></p>
-                </div>
+          </div>
+          <div class="card__content">
+            <br />
+            <p>
+              <a href="pages/documents.html#2.3" target="_blank"
+                >Calculadoras Graficas</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card-4">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
             </div>
-            <div class="card-6">
-                <div class="tools">
-                    <div class="circle">
-                        <span class="red box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="yellow box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="green box"></span>
-                    </div>
-                </div>
-                <div class="card__content">
-                    <br>
-                    <p><a href="pages/documents.html#features" target="_blank">Actualizacion Siempre</a></p>
-                </div>
+            <div class="circle">
+              <span class="yellow box"></span>
             </div>
-            <div class="card-1-1">
-                <div class="tools">
-                    <div class="circle">
-                        <span class="red box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="yellow box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="green box"></span>
-                    </div>
-                </div>
-                <div class="card__content">
-                    <br>
-                    <p><a href="pages/documents.html#2.7" target="_blank">Trabajo en Equipo</a></p>
-                </div>
+            <div class="circle">
+              <span class="green box"></span>
             </div>
-            <div class="card-2-2">
-                <div class="tools">
-                    <div class="circle">
-                        <span class="red box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="yellow box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="green box"></span>
-                    </div>
-                </div>
-                <div class="card__content">
-                    <br>
-                    <p><a href="pages/documents.html#2.2" target="_blank">Calculadoras Cientificas</a></p>
-                </div>
+          </div>
+          <div class="card__content">
+            <br />
+            <p>
+              <a href="pages/documents.html#2.8" target="_blank"
+                >Perzonalizar Interfaz</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card-5">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
             </div>
-            <div class="card-3-3">
-                <div class="tools">
-                    <div class="circle">
-                        <span class="red box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="yellow box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="green box"></span>
-                    </div>
-                </div>
-                <div class="card__content">
-                    <br>
-                    <p><a href="pages/documents.html#2.9" target="_blank">Vinculacion en Nube</a></p>
-                </div>
+            <div class="circle">
+              <span class="yellow box"></span>
             </div>
-            <div class="card-4-4">
-                <div class="tools">
-                    <div class="circle">
-                        <span class="red box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="yellow box"></span>
-                    </div>
-                    <div class="circle">
-                        <span class="green box"></span>
-                    </div>
-                </div>
-                <div class="card__content">
-                    <br>
-                    <p><a href="pages/documents.html#2.4" target="_blank">Calculadoras de Finanzas</a></p>
-                </div>
+            <div class="circle">
+              <span class="green box"></span>
             </div>
-            <!-- DECORACION -->
-            <img src="assets/img/bg-info.jpg" alt="bg-info" class="bg-info">
-            <span class="decobar-1"></span>
-        </section>
-        <!-- SECCION DE NOVEDADES -->
-        <section id="news">
-            <div class="container-relases">
-                <h4 class="title-news"><a href="pages/documents.html#features" target="_blank">¡Novedades!</a></h4>
-                <h5>1.0</h5>
-                <p>En proceso...</p>
+          </div>
+          <div class="card__content">
+            <br />
+            <p>
+              <a href="pages/documents.html#2.5" target="_blank"
+                >Calculadoras Novedosas</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card-6">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
             </div>
-            <img src="assets/img/news.jpg" alt="bg-news" class="bg-news">
-            <span class="decobar-2"></span>
-        </section>
-        <!-- SECCION  DE DESCARGA -->
-        <section id="download">
-            <div class="bg-dw-container">
-                <video src="assets/vid/bg-dw.mp4" class="bg-dw" autoplay loop muted></video>
+            <div class="circle">
+              <span class="yellow box"></span>
             </div>
-            <div class="download-content">
-                <h1>DARK CALCULATOR</h1>
-                <h2 class="subtitle">Descargar</h2>
-                <div class="download-options">
-                    <p class="optiondw">Windows</p>
-                    <span class="optiondw-divider">|</span>
-                    <p class="optiondw">Android</p>
-                </div>
+            <div class="circle">
+              <span class="green box"></span>
             </div>
-        </section>
+          </div>
+          <div class="card__content">
+            <br />
+            <p>
+              <a href="pages/documents.html#features" target="_blank"
+                >Actualizacion Siempre</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card-1-1">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
+            </div>
+            <div class="circle">
+              <span class="yellow box"></span>
+            </div>
+            <div class="circle">
+              <span class="green box"></span>
+            </div>
+          </div>
+          <div class="card__content">
+            <br />
+            <p>
+              <a href="pages/documents.html#2.7" target="_blank"
+                >Trabajo en Equipo</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card-2-2">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
+            </div>
+            <div class="circle">
+              <span class="yellow box"></span>
+            </div>
+            <div class="circle">
+              <span class="green box"></span>
+            </div>
+          </div>
+          <div class="card__content">
+            <br />
+            <p>
+              <a href="pages/documents.html#2.2" target="_blank"
+                >Calculadoras Cientificas</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card-3-3">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
+            </div>
+            <div class="circle">
+              <span class="yellow box"></span>
+            </div>
+            <div class="circle">
+              <span class="green box"></span>
+            </div>
+          </div>
+          <div class="card__content">
+            <br />
+            <p>
+              <a href="pages/documents.html#2.9" target="_blank"
+                >Vinculacion en Nube</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card-4-4">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
+            </div>
+            <div class="circle">
+              <span class="yellow box"></span>
+            </div>
+            <div class="circle">
+              <span class="green box"></span>
+            </div>
+          </div>
+          <div class="card__content">
+            <br />
+            <p>
+              <a href="pages/documents.html#2.4" target="_blank"
+                >Calculadoras de Finanzas</a
+              >
+            </p>
+          </div>
+        </div>
+        <!-- DECORACION -->
+        <img src="assets/img/bg-info.jpg" alt="bg-info" class="bg-info" />
+        <span class="decobar-1"></span>
+      </section>
+      <!-- SECCION DE NOVEDADES -->
+      <section id="news">
+        <div class="container-relases">
+          <h4 class="title-news">
+            <a href="pages/documents.html#features" target="_blank"
+              >¡Novedades!</a
+            >
+          </h4>
+          <h5>1.0</h5>
+          <p>En proceso...</p>
+        </div>
+        <img src="assets/img/news.jpg" alt="bg-news" class="bg-news" />
+        <span class="decobar-2"></span>
+      </section>
+      <!-- SECCION  DE DESCARGA -->
+      <section id="download">
+        <div class="bg-dw-container">
+          <video
+            src="assets/vid/bg-dw.mp4"
+            class="bg-dw"
+            autoplay
+            loop
+            muted
+          ></video>
+        </div>
+        <div class="download-content">
+          <h1>DARK CALCULATOR</h1>
+          <h2 class="subtitle">Descargar</h2>
+          <div class="download-options">
+            <p class="optiondw">Windows</p>
+            <span class="optiondw-divider">|</span>
+            <p class="optiondw">Android</p>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- PIE DE PAGINA-->
     <footer>
-        <div class="footer-content">
-            <p>&copy; <span id="currentYear"></span> DarkCalculator. Todos los derechos reservados.</p>
-        </div>
+      <div class="footer-content">
+        <p>
+          &copy; <span id="currentYear"></span> DarkCalculator. Todos los
+          derechos reservados.
+        </p>
+      </div>
     </footer>
     <!-- RECURSOS -->
     <script src="js/animated.bg.js"></script>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>

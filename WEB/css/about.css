@@ -1,6 +1,6 @@
 /* CSS DE A SECCION ACERCA DE */
 /*IMPORTACION DE FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
 
 /* ELEMENTOS */
 .about-1 {
@@ -48,12 +48,12 @@
   width: 50%;
 }
 
-h2{
+h2 {
   font-size: 40px;
 }
 
-p{
-  font-family: 'Outfit', sans-serif;
+p {
+  font-family: "Outfit", sans-serif;
 }
 
 /* BOTON GITHUB */
@@ -64,11 +64,11 @@ p{
   border: none;
   background: none;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(16vw,0vh);
+  transform: translate(16vw, 0vh);
   cursor: pointer;
 }
 
@@ -76,8 +76,9 @@ p{
   margin-left: auto;
 }
 
-.btn-github::after, button::before {
-  content: '';
+.btn-github::after,
+button::before {
+  content: "";
   width: 0%;
   height: 2px;
   background: #fff;
@@ -85,6 +86,7 @@ p{
   transition: 0.5s;
 }
 
-.btn-github:hover::after, button:hover::before {
+.btn-github:hover::after,
+button:hover::before {
   width: 100%;
 }
