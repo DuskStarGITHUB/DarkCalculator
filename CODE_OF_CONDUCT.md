@@ -36,7 +36,7 @@ Este Código de Conducta se aplica en todos los espacios de la comunidad, y tamb
 
 ## Cumplimiento
 
-Los casos de comportamiento abusivo, acosador o inaceptable pueden ser reportados a los líderes de la comunidad responsables de la aplicación en https://github.com/DuskStarGITHUB/DarkCalculator/issues. Todas las quejas serán revisadas e investigadas de manera pronta y justa.
+Los casos de comportamiento abusivo, acosador o inaceptable pueden ser reportados a los líderes de la comunidad responsables de la aplicación en ShadowTech-Solutions@outlook.com. Todas las quejas serán revisadas e investigadas de manera pronta y justa.
 
 Todos los líderes de la comunidad están obligados a respetar la privacidad y seguridad del denunciante de cualquier incidente.
 
