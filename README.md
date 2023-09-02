@@ -1,6 +1,6 @@
 # Dark Calculator
 
-![Logo](GITHUB/logo-darkcalculator.png)
+<img src="GITHUB/logo-darkcalculator.png" width="150">
 
 ## 💡 Introducción
 
