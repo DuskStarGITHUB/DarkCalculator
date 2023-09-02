@@ -31,7 +31,7 @@ Dark Calculator es una aplicación multifacética que te brinda una amplia gama 
 
 ## 📞 Contacto
 
-Ponte en contacto con nosotros a través de [ShadowTech-Solutions@outlook.com] o [/] para obtener más información sobre Dark Calculator.
+Ponte en contacto con nosotros a través de [ShadowTech-Solutions@outlook.com] o [https://github.com/DuskStarGITHUB/DarkCalculator/issues] para obtener más información sobre Dark Calculator.
 
 ## 👤 Desarrolladores
 
