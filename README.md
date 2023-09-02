@@ -1,6 +1,12 @@
-# Dark Calculator
+<div align="center">
+  
+  # Dark Calculator
 
-<img src="GITHUB/logo-darkcalculator.png" width="150">
+</div>
+
+<div align="center">
+  <img src="GITHUB/logo-darkcalculator.png" width="150">
+</div>
 
 ## 💡 Introducción
 
