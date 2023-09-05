@@ -6,6 +6,8 @@
 # Nota: <N/A>
 #####################################################################################
 
+# Funciones de operaciones
+
 def suma(num_1,num_2):
     """Función que suma dos numeros"""
     return num_1+num_2
