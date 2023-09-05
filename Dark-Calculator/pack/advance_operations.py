@@ -109,3 +109,39 @@ def arco_tangente_hiperbolica(num_1):
         raise ValueError("Arco tangente hiperbolica negativa")
     else:
         return math.atanh(num_1)
+
+def exponencial(num_1):
+    """Función que calcula el exponencial de un numero"""
+    if num_1 < 0:
+        raise ValueError("Exponencial negativo")
+    else:
+        return math.exp(num_1)
+
+def elevacion(num_1, num_2):
+    """Función que calcula la elevacion a la potencia de un numero"""
+    if num_1 < 0 or num_2 < 0:
+        raise ValueError("Elevacion a la potencia negativa")
+    else:
+        return math.pow(num_1, num_2)
+
+def logaritmo(num_1):
+    """Función que calcula el logaritmo de un numero"""
+    if num_1 < 0:
+        raise ValueError("Logaritmo negativo")
+    else:
+        return math.log(num_1)
+
+def logartimo_perzonalizado(num_1, num_2):
+    """Función que calcula el logaritmo perzonalizado de un numero"""
+    if num_1 < 0 or num_2 < 0:
+        raise ValueError("Logaritmo perzonalizado negativo")
+    else:
+        return math.log(num_1, num_2)
+
+def logaritmo_natural(num_1):
+    """Función que calcula el logaritmo natural de un numero"""
+    if num_1 < 0:
+        raise ValueError("Logaritmo natural negativo")
+    else:
+        return math.log10(num_1)
+
