@@ -35,5 +35,7 @@ def convertir_temperatura(valor, unidad_origen, unidad_destino):
     }
     factor_origen, desplazamiento_origen = conversiones[unidad_origen]
     factor_destino, desplazamiento_destino = conversiones[unidad_destino]
-    valor_convertido = (valor - desplazamiento_origen) * factor_destino / factor_origen + desplazamiento_destino
+    valor_convertido = (
+        valor - desplazamiento_origen
+        ) * factor_destino / factor_origen + desplazamiento_destino
     return valor_convertido
