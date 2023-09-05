@@ -11,13 +11,6 @@ import math
 
 # Funciones trigonométricas
 
-def raiz(num_1):
-    """Función que calcula la raiz cuadrada de un numero"""
-    if num_1 < 0:
-        raise ValueError("Raiz negativa")
-    else:
-        return math.sqrt(num_1)
-
 def seno(num_1):
     """Función que calcula el seno de un numero"""
     if num_1 < 0:
@@ -178,3 +171,26 @@ def constante_valor_pi():
 def constate_matematica_e():
     """Funcion de valor de e"""
     return math.e
+
+# Otras funciones matemáticas
+
+def raiz(num_1):
+    """Función que calcula la raiz cuadrada de un numero"""
+    if num_1 < 0:
+        raise ValueError("Raiz negativa")
+    else:
+        return math.sqrt(num_1)
+
+def facotrial(num_1):
+    """Función que calcula el factorial de un numero"""
+    if num_1 < 0:
+        raise ValueError("Factorial negativo")
+    else:
+        return math.factorial(num_1)
+
+def maximo_comun_divisor(num_1, num_2):
+    """Función que calcula el maximo comun divisor de dos numeros"""
+    if num_1 < 0 or num_2 < 0:
+        raise ValueError("Maximo comun divisor negativo")
+    else:
+        return math.gcd(num_1, num_2)
