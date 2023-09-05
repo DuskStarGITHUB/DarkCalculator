@@ -32,6 +32,29 @@ def tangente(num_1):
     else:
         return math.tan(num_1)
 
+def secante(num_1):
+    """Función que calcula la secante de un numero"""
+    if num_1 < 0:
+        raise ValueError("Secante negativa")
+    else:
+        return 1/math.cos(num_1)
+
+def cosecante(num_1):
+    """Función que calcula el cosecante de un numero"""
+    if num_1 < 0:
+        raise ValueError("Cosecante negativa")
+    else:
+        return 1/math.sin(num_1)
+
+def cotangente(num_1):
+    """Función que calcula el cotangente de un numero"""
+    if num_1 < 0:
+        raise ValueError("Cotangente negativa")
+    else:
+        return 1/math.tan(num_1)
+
+# Funciones arco
+
 def arco_seno(num_1):
     """Función que calcula el arco seno de un numero"""
     if num_1 < 0:
@@ -85,6 +108,27 @@ def tangente_hiperbolica(num_1):
         raise ValueError("Tangente hiperbolica negativa")
     else:
         return math.tanh(num_1)
+
+def secante_hiperbolica(num_1):
+    """Función que calcula la secante hiperbolica de un numero"""
+    if num_1 < 0:
+        raise ValueError("Secante hiperbolica negativa")
+    else:
+        return 1/math.cosh(num_1)
+
+def cosecante_hiperbolica(num_1):
+    """Función que calcula el cosecante hiperbolico de un numero"""
+    if num_1 < 0:
+        raise ValueError("Cosecante hiperbolico negativo")
+    else:
+        return 1/math.sinh(num_1)
+
+def cotangente_hiperbolico(num_1):
+    """Función que calcula el cotangente hiperbolico de un numero"""
+    if num_1 < 0:
+        raise ValueError("Cotangente hiperbolico negativo")
+    else:
+        return 1/math.tanh(num_1)
 
 def arco_seno_hiperbolico(num_1):
     """Función que calcula el arco seno hiperbolico de un numero"""
@@ -180,6 +224,13 @@ def raiz(num_1):
         raise ValueError("Raiz negativa")
     else:
         return math.sqrt(num_1)
+
+def raiz_cubica(num_1):
+    """Función que calcula la raiz cubica de un numero"""
+    if num_1 < 0:
+        raise ValueError("Raiz cubica negativa")
+    else:
+        return math.cbrt(num_1)
 
 def facotrial(num_1):
     """Función que calcula el factorial de un numero"""
