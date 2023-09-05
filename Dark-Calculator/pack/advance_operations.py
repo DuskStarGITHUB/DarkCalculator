@@ -145,3 +145,18 @@ def logaritmo_natural(num_1):
     else:
         return math.log10(num_1)
 
+def redondeo_arriba(num_1):
+    """Función que calcula el redondeo arriba de un numero"""
+    return math.ceil(num_1)
+
+def redondeo_abajo(num_1):
+    """Función que calcula el redondeo abajo de un numero"""
+    return math.floor(num_1)
+
+def truncamiento(num_1):
+    """Función que calcula el truncamiento de un numero"""
+    return math.trunc(num_1)
+
+def valor_absoluto(num_1):
+    """Función que calcula el valor absoluto de un numero"""
+    return math.fabs(num_1)
