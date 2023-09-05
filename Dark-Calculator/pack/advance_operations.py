@@ -160,3 +160,11 @@ def truncamiento(num_1):
 def valor_absoluto(num_1):
     """Función que calcula el valor absoluto de un numero"""
     return math.fabs(num_1)
+
+def constante_valor_pi():
+    """Funcion de valor de pi"""
+    return math.pi
+
+def constate_matematica_e():
+    """Funcion de valor de e"""
+    return math.e
