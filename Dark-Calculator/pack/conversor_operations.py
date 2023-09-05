@@ -39,3 +39,33 @@ def convertir_temperatura(valor, unidad_origen, unidad_destino):
         valor - desplazamiento_origen
         ) * factor_destino / factor_origen + desplazamiento_destino
     return valor_convertido
+
+def convertir_peso(valor, unidad_origen, unidad_destino):
+    """Sistema: peso"""
+    conversiones = {
+        'kg': {
+            'g': 1000,
+            'lb': 2.20462,
+            'oz': 35.274
+        },
+        'g': {
+            'kg': 0.001,
+            'lb': 0.00220462,
+            'oz': 0.035274
+        },
+        'lb': {
+            'kg': 0.453592,
+            'g': 453.592,
+            'oz': 16
+        },
+        'oz': {
+            'kg': 0.0283495,
+            'g': 28.3495,
+            'lb': 0.0625
+        }
+    }
+    # Proceso
+    factor_conversion = conversiones[unidad_origen][unidad_destino]
+    valor_convertido = valor * factor_conversion
+    # Retornar resultado
+    return valor_convertido
