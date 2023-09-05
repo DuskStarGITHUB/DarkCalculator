@@ -40,3 +40,7 @@ def porcentaje(num_1,num_2):
         raise ValueError("Porcentaje negativo")
     else:
         return num_1*num_2/100
+
+def cambio_signo(num_1):
+    """Función que cambia el signo de un numero"""
+    return -num_1
