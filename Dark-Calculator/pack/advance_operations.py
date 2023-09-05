@@ -67,3 +67,45 @@ def arco_tangente_razon(num_1, num_2):
         raise ValueError("Arco tangente razon negativo")
     else:
         return math.atan2(num_1,num_2)
+
+def seno_hiperbolico(num_1):
+    """Función que calcula el seno hiperbolico de un numero"""
+    if num_1 < 0:
+        raise ValueError("Seno hiperbolico negativo")
+    else:
+        return math.sinh(num_1)
+
+def coseno_hiperbolico(num_1):
+    """Función que calcula el coseno hiperbolico de un numero"""
+    if num_1 < 0:
+        raise ValueError("Coseno hiperbolico negativo")
+    else:
+        return math.cosh(num_1)
+
+def tangente_hiperbolica(num_1):
+    """Función que calcula la tangente hiperbolica de un numero"""
+    if num_1 < 0:
+        raise ValueError("Tangente hiperbolica negativa")
+    else:
+        return math.tanh(num_1)
+
+def arco_seno_hiperbolico(num_1):
+    """Función que calcula el arco seno hiperbolico de un numero"""
+    if num_1 < 0:
+        raise ValueError("Arco seno hiperbolico negativo")
+    else:
+        return math.asinh(num_1)
+
+def arco_coseno_hiperbolico(num_1):
+    """Función que calcula el arco coseno hiperbolico de un numero"""
+    if num_1 < 0:
+        raise ValueError("Arco coseno hiperbolico negativo")
+    else:
+        return math.acosh(num_1)
+
+def arco_tangente_hiperbolica(num_1):
+    """Función que calcula el arco tangente hiperbolica de un numero"""
+    if num_1 < 0:
+        raise ValueError("Arco tangente hiperbolica negativa")
+    else:
+        return math.atanh(num_1)
