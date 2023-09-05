@@ -9,6 +9,8 @@
 # Librerias
 import math
 
+# Funciones trigonométricas
+
 def raiz(num_1):
     """Función que calcula la raiz cuadrada de un numero"""
     if num_1 < 0:
@@ -68,6 +70,8 @@ def arco_tangente_razon(num_1, num_2):
     else:
         return math.atan2(num_1,num_2)
 
+# Funciones hiperbólicas:
+
 def seno_hiperbolico(num_1):
     """Función que calcula el seno hiperbolico de un numero"""
     if num_1 < 0:
@@ -110,6 +114,8 @@ def arco_tangente_hiperbolica(num_1):
     else:
         return math.atanh(num_1)
 
+# Funciones exponenciales y logaritmos
+
 def exponencial(num_1):
     """Función que calcula el exponencial de un numero"""
     if num_1 < 0:
@@ -145,6 +151,8 @@ def logaritmo_natural(num_1):
     else:
         return math.log10(num_1)
 
+# Funciones de redondeo y valor absoluto
+
 def redondeo_arriba(num_1):
     """Función que calcula el redondeo arriba de un numero"""
     return math.ceil(num_1)
@@ -160,6 +168,8 @@ def truncamiento(num_1):
 def valor_absoluto(num_1):
     """Función que calcula el valor absoluto de un numero"""
     return math.fabs(num_1)
+
+# Constantes matemáticas
 
 def constante_valor_pi():
     """Funcion de valor de pi"""
