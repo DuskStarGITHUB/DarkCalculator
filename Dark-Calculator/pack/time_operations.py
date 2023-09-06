@@ -6,6 +6,8 @@
 # Nota: <N/A>
 #####################################################################################
 
+# POO
+
 class CalculadoraTiempo:
     """Estructura del objeto"""
     def __init__(self):
