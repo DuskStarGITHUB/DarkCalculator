@@ -27,7 +27,7 @@ def division(num_1,num_2):
     else:
         return num_1/num_2
 
-def potencinum_1(num_1,num_2):
+def potencia(num_1,num_2):
     """Función que eleva un numero a otro"""
     if num_2 < 0:
         raise ValueError("Potencia negativa")
@@ -41,6 +41,7 @@ def porcentaje(num_1,num_2):
     else:
         return num_1*num_2/100
 
-def cambio_signo(num_1):
-    """Función que cambia el signo de un numero"""
-    return -num_1
+def cambio_signo(resultado):
+    """Función que cambia el signo de un resultado"""
+    return -resultado
+
