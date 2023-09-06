@@ -1,8 +1,8 @@
 """Titulo: |Operations|"""
 #####################################################################################
-# Descripción: <Funciones de operacion de operaciones basicas con fracciones>
+# Descripción: <Funciones  de operaciones basicas con fracciones>
 # autor: <DuskStar>
-# Fecha de creación: <05/09/2023>
+# Fecha de creación: <06/09/2023>
 # Nota: <N/A>
 #####################################################################################
 
